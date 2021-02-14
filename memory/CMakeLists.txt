@@ -1,0 +1,1 @@
+add_executable(memory_array memory_array.cpp)
