@@ -137,6 +137,32 @@ memory_array/fast:
 .PHONY : memory_array/fast
 
 #=============================================================================
+# Target rules for targets named template_template
+
+# Build rule for target.
+template_template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template_template
+.PHONY : template_template
+
+# fast build rule for target.
+template_template/fast:
+	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
+.PHONY : template_template/fast
+
+#=============================================================================
+# Target rules for targets named 1_5
+
+# Build rule for target.
+1_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_5
+.PHONY : 1_5
+
+# fast build rule for target.
+1_5/fast:
+	$(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
+.PHONY : 1_5/fast
+
+#=============================================================================
 # Target rules for targets named 1_4
 
 # Build rule for target.
@@ -198,6 +224,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
 	@echo "... memory_array"
+	@echo "... template_template"
+	@echo "... 1_5"
 	@echo "... 1_4"
 	@echo "... 1_2"
 	@echo "... 1_3"

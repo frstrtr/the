@@ -111,6 +111,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+1/CMakeFiles/template_template.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_template.dir/rule
+.PHONY : 1/CMakeFiles/template_template.dir/rule
+
+# Convenience name for target.
+template_template: 1/CMakeFiles/template_template.dir/rule
+
+.PHONY : template_template
+
+# fast build rule for target.
+template_template/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
+.PHONY : template_template/fast
+
+# Convenience name for target.
+1/CMakeFiles/1_5.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_5.dir/rule
+.PHONY : 1/CMakeFiles/1_5.dir/rule
+
+# Convenience name for target.
+1_5: 1/CMakeFiles/1_5.dir/rule
+
+.PHONY : 1_5
+
+# fast build rule for target.
+1_5/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
+.PHONY : 1_5/fast
+
+# Convenience name for target.
 1/CMakeFiles/1_4.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_4.dir/rule
 .PHONY : 1/CMakeFiles/1_4.dir/rule
@@ -278,6 +308,60 @@ depend:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/1_4.cpp.s
 .PHONY : 1_4.cpp.s
 
+1_5.o: 1_5.cpp.o
+
+.PHONY : 1_5.o
+
+# target to build an object file
+1_5.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/1_5.cpp.o
+.PHONY : 1_5.cpp.o
+
+1_5.i: 1_5.cpp.i
+
+.PHONY : 1_5.i
+
+# target to preprocess a source file
+1_5.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/1_5.cpp.i
+.PHONY : 1_5.cpp.i
+
+1_5.s: 1_5.cpp.s
+
+.PHONY : 1_5.s
+
+# target to generate assembly for a file
+1_5.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/1_5.cpp.s
+.PHONY : 1_5.cpp.s
+
+template_template.o: template_template.cpp.o
+
+.PHONY : template_template.o
+
+# target to build an object file
+template_template.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/template_template.cpp.o
+.PHONY : template_template.cpp.o
+
+template_template.i: template_template.cpp.i
+
+.PHONY : template_template.i
+
+# target to preprocess a source file
+template_template.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/template_template.cpp.i
+.PHONY : template_template.cpp.i
+
+template_template.s: template_template.cpp.s
+
+.PHONY : template_template.s
+
+# target to generate assembly for a file
+template_template.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/template_template.cpp.s
+.PHONY : template_template.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,6 +370,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... template_template"
+	@echo "... 1_5"
 	@echo "... 1_4"
 	@echo "... 1_2"
 	@echo "... 1_3"
@@ -302,6 +388,12 @@ help:
 	@echo "... 1_4.o"
 	@echo "... 1_4.i"
 	@echo "... 1_4.s"
+	@echo "... 1_5.o"
+	@echo "... 1_5.i"
+	@echo "... 1_5.s"
+	@echo "... template_template.o"
+	@echo "... template_template.i"
+	@echo "... template_template.s"
 .PHONY : help
 
 

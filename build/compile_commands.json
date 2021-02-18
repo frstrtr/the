@@ -11,6 +11,16 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repo/the/1/template_template.cpp",
+  "file": "/home/sl33n/repo/the/1/template_template.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/1_5.dir/1_5.cpp.o -c /home/sl33n/repo/the/1/1_5.cpp",
+  "file": "/home/sl33n/repo/the/1/1_5.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
   "command": "/bin/g++-8    -g   -o CMakeFiles/1_4.dir/1_4.cpp.o -c /home/sl33n/repo/the/1/1_4.cpp",
   "file": "/home/sl33n/repo/the/1/1_4.cpp"
 },
