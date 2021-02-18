@@ -3,3 +3,12 @@
 /home/sl33n/repo/the/build/par_deriv/CMakeFiles/edit_cache.dir
 /home/sl33n/repo/the/build/par_deriv/CMakeFiles/rebuild_cache.dir
 /home/sl33n/repo/the/build/par_deriv/CMakeFiles/shared_this_parent_derived.dir
+/home/sl33n/repo/the/build/memory/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repo/the/build/memory/CMakeFiles/edit_cache.dir
+/home/sl33n/repo/the/build/memory/CMakeFiles/memory_array.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/edit_cache.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/1_4.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/1_2.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/1_3.dir
+/home/sl33n/repo/the/build/1/CMakeFiles/1.dir

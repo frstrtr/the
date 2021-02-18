@@ -54,18 +54,66 @@ CMAKE_BINARY_DIR = /home/sl33n/repo/the/build
 
 # The main recursive "all" target.
 all: par_deriv/all
+all: memory/all
+all: 1/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: par_deriv/preinstall
+preinstall: memory/preinstall
+preinstall: 1/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: par_deriv/clean
+clean: memory/clean
+clean: 1/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory 1
+
+# Recursive "all" directory target.
+1/all: 1/CMakeFiles/1_4.dir/all
+1/all: 1/CMakeFiles/1_2.dir/all
+1/all: 1/CMakeFiles/1_3.dir/all
+1/all: 1/CMakeFiles/1.dir/all
+
+.PHONY : 1/all
+
+# Recursive "preinstall" directory target.
+1/preinstall:
+
+.PHONY : 1/preinstall
+
+# Recursive "clean" directory target.
+1/clean: 1/CMakeFiles/1_4.dir/clean
+1/clean: 1/CMakeFiles/1_2.dir/clean
+1/clean: 1/CMakeFiles/1_3.dir/clean
+1/clean: 1/CMakeFiles/1.dir/clean
+
+.PHONY : 1/clean
+
+#=============================================================================
+# Directory level rules for directory memory
+
+# Recursive "all" directory target.
+memory/all: memory/CMakeFiles/memory_array.dir/all
+
+.PHONY : memory/all
+
+# Recursive "preinstall" directory target.
+memory/preinstall:
+
+.PHONY : memory/preinstall
+
+# Recursive "clean" directory target.
+memory/clean: memory/CMakeFiles/memory_array.dir/clean
+
+.PHONY : memory/clean
 
 #=============================================================================
 # Directory level rules for directory par_deriv
@@ -92,7 +140,7 @@ par_deriv/clean: par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
 par_deriv/CMakeFiles/shared_this_parent_derived.dir/all:
 	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/depend
 	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=1,2 "Built target shared_this_parent_derived"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=11,12 "Built target shared_this_parent_derived"
 .PHONY : par_deriv/CMakeFiles/shared_this_parent_derived.dir/all
 
 # Build rule for subdir invocation for target.
@@ -111,6 +159,141 @@ shared_this_parent_derived: par_deriv/CMakeFiles/shared_this_parent_derived.dir/
 par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean:
 	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
 .PHONY : par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
+
+#=============================================================================
+# Target rules for target memory/CMakeFiles/memory_array.dir
+
+# All Build rule for target.
+memory/CMakeFiles/memory_array.dir/all:
+	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/depend
+	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=9,10 "Built target memory_array"
+.PHONY : memory/CMakeFiles/memory_array.dir/all
+
+# Build rule for subdir invocation for target.
+memory/CMakeFiles/memory_array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/memory_array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : memory/CMakeFiles/memory_array.dir/rule
+
+# Convenience name for target.
+memory_array: memory/CMakeFiles/memory_array.dir/rule
+
+.PHONY : memory_array
+
+# clean rule for target.
+memory/CMakeFiles/memory_array.dir/clean:
+	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/clean
+.PHONY : memory/CMakeFiles/memory_array.dir/clean
+
+#=============================================================================
+# Target rules for target 1/CMakeFiles/1_4.dir
+
+# All Build rule for target.
+1/CMakeFiles/1_4.dir/all:
+	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/depend
+	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=7,8 "Built target 1_4"
+.PHONY : 1/CMakeFiles/1_4.dir/all
+
+# Build rule for subdir invocation for target.
+1/CMakeFiles/1_4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : 1/CMakeFiles/1_4.dir/rule
+
+# Convenience name for target.
+1_4: 1/CMakeFiles/1_4.dir/rule
+
+.PHONY : 1_4
+
+# clean rule for target.
+1/CMakeFiles/1_4.dir/clean:
+	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/clean
+.PHONY : 1/CMakeFiles/1_4.dir/clean
+
+#=============================================================================
+# Target rules for target 1/CMakeFiles/1_2.dir
+
+# All Build rule for target.
+1/CMakeFiles/1_2.dir/all:
+	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/depend
+	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=3,4 "Built target 1_2"
+.PHONY : 1/CMakeFiles/1_2.dir/all
+
+# Build rule for subdir invocation for target.
+1/CMakeFiles/1_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : 1/CMakeFiles/1_2.dir/rule
+
+# Convenience name for target.
+1_2: 1/CMakeFiles/1_2.dir/rule
+
+.PHONY : 1_2
+
+# clean rule for target.
+1/CMakeFiles/1_2.dir/clean:
+	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/clean
+.PHONY : 1/CMakeFiles/1_2.dir/clean
+
+#=============================================================================
+# Target rules for target 1/CMakeFiles/1_3.dir
+
+# All Build rule for target.
+1/CMakeFiles/1_3.dir/all:
+	$(MAKE) -f 1/CMakeFiles/1_3.dir/build.make 1/CMakeFiles/1_3.dir/depend
+	$(MAKE) -f 1/CMakeFiles/1_3.dir/build.make 1/CMakeFiles/1_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=5,6 "Built target 1_3"
+.PHONY : 1/CMakeFiles/1_3.dir/all
+
+# Build rule for subdir invocation for target.
+1/CMakeFiles/1_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : 1/CMakeFiles/1_3.dir/rule
+
+# Convenience name for target.
+1_3: 1/CMakeFiles/1_3.dir/rule
+
+.PHONY : 1_3
+
+# clean rule for target.
+1/CMakeFiles/1_3.dir/clean:
+	$(MAKE) -f 1/CMakeFiles/1_3.dir/build.make 1/CMakeFiles/1_3.dir/clean
+.PHONY : 1/CMakeFiles/1_3.dir/clean
+
+#=============================================================================
+# Target rules for target 1/CMakeFiles/1.dir
+
+# All Build rule for target.
+1/CMakeFiles/1.dir/all:
+	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/depend
+	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=1,2 "Built target 1"
+.PHONY : 1/CMakeFiles/1.dir/all
+
+# Build rule for subdir invocation for target.
+1/CMakeFiles/1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : 1/CMakeFiles/1.dir/rule
+
+# Convenience name for target.
+1 : 1/CMakeFiles/1.dir/rule
+
+.PHONY : 1
+
+# clean rule for target.
+1/CMakeFiles/1.dir/clean:
+	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/clean
+.PHONY : 1/CMakeFiles/1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

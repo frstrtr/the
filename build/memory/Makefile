@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles /home/sl33n/repo/the/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/sl33n/repo/the/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles /home/sl33n/repo/the/build/memory/CMakeFiles/progress.marks
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,96 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sl33n/repo/the/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named shared_this_parent_derived
+# Convenience name for target.
+memory/CMakeFiles/memory_array.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/memory_array.dir/rule
+.PHONY : memory/CMakeFiles/memory_array.dir/rule
 
-# Build rule for target.
-shared_this_parent_derived: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shared_this_parent_derived
-.PHONY : shared_this_parent_derived
+# Convenience name for target.
+memory_array: memory/CMakeFiles/memory_array.dir/rule
 
-# fast build rule for target.
-shared_this_parent_derived/fast:
-	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/build
-.PHONY : shared_this_parent_derived/fast
-
-#=============================================================================
-# Target rules for targets named memory_array
-
-# Build rule for target.
-memory_array: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 memory_array
 .PHONY : memory_array
 
 # fast build rule for target.
 memory_array/fast:
-	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
 .PHONY : memory_array/fast
 
-#=============================================================================
-# Target rules for targets named 1_4
+memory_array.o: memory_array.cpp.o
 
-# Build rule for target.
-1_4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_4
-.PHONY : 1_4
+.PHONY : memory_array.o
 
-# fast build rule for target.
-1_4/fast:
-	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
-.PHONY : 1_4/fast
+# target to build an object file
+memory_array.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/memory_array.cpp.o
+.PHONY : memory_array.cpp.o
 
-#=============================================================================
-# Target rules for targets named 1_2
+memory_array.i: memory_array.cpp.i
 
-# Build rule for target.
-1_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_2
-.PHONY : 1_2
+.PHONY : memory_array.i
 
-# fast build rule for target.
-1_2/fast:
-	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
-.PHONY : 1_2/fast
+# target to preprocess a source file
+memory_array.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/memory_array.cpp.i
+.PHONY : memory_array.cpp.i
 
-#=============================================================================
-# Target rules for targets named 1_3
+memory_array.s: memory_array.cpp.s
 
-# Build rule for target.
-1_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_3
-.PHONY : 1_3
+.PHONY : memory_array.s
 
-# fast build rule for target.
-1_3/fast:
-	$(MAKE) -f 1/CMakeFiles/1_3.dir/build.make 1/CMakeFiles/1_3.dir/build
-.PHONY : 1_3/fast
-
-#=============================================================================
-# Target rules for targets named 1
-
-# Build rule for target.
-1 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1
-.PHONY : 1
-
-# fast build rule for target.
-1/fast:
-	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
-.PHONY : 1/fast
+# target to generate assembly for a file
+memory_array.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/memory_array.cpp.s
+.PHONY : memory_array.cpp.s
 
 # Help Target
 help:
@@ -196,12 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... shared_this_parent_derived"
 	@echo "... memory_array"
-	@echo "... 1_4"
-	@echo "... 1_2"
-	@echo "... 1_3"
-	@echo "... 1"
+	@echo "... memory_array.o"
+	@echo "... memory_array.i"
+	@echo "... memory_array.s"
 .PHONY : help
 
 
@@ -213,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sl33n/repo/the/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
