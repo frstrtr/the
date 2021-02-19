@@ -11,6 +11,16 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repo/the/1/weak_ptr.cpp",
+  "file": "/home/sl33n/repo/the/1/weak_ptr.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/ptr_template.dir/ptr_template.cpp.o -c /home/sl33n/repo/the/1/ptr_template.cpp",
+  "file": "/home/sl33n/repo/the/1/ptr_template.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
   "command": "/bin/g++-8    -g   -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repo/the/1/template_template.cpp",
   "file": "/home/sl33n/repo/the/1/template_template.cpp"
 },

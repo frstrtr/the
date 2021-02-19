@@ -137,6 +137,32 @@ memory_array/fast:
 .PHONY : memory_array/fast
 
 #=============================================================================
+# Target rules for targets named weak_ptr
+
+# Build rule for target.
+weak_ptr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 weak_ptr
+.PHONY : weak_ptr
+
+# fast build rule for target.
+weak_ptr/fast:
+	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
+.PHONY : weak_ptr/fast
+
+#=============================================================================
+# Target rules for targets named ptr_template
+
+# Build rule for target.
+ptr_template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ptr_template
+.PHONY : ptr_template
+
+# fast build rule for target.
+ptr_template/fast:
+	$(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
+.PHONY : ptr_template/fast
+
+#=============================================================================
 # Target rules for targets named template_template
 
 # Build rule for target.
@@ -224,6 +250,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
 	@echo "... memory_array"
+	@echo "... weak_ptr"
+	@echo "... ptr_template"
 	@echo "... template_template"
 	@echo "... 1_5"
 	@echo "... 1_4"

@@ -111,6 +111,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+1/CMakeFiles/weak_ptr.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/weak_ptr.dir/rule
+.PHONY : 1/CMakeFiles/weak_ptr.dir/rule
+
+# Convenience name for target.
+weak_ptr: 1/CMakeFiles/weak_ptr.dir/rule
+
+.PHONY : weak_ptr
+
+# fast build rule for target.
+weak_ptr/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
+.PHONY : weak_ptr/fast
+
+# Convenience name for target.
+1/CMakeFiles/ptr_template.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/ptr_template.dir/rule
+.PHONY : 1/CMakeFiles/ptr_template.dir/rule
+
+# Convenience name for target.
+ptr_template: 1/CMakeFiles/ptr_template.dir/rule
+
+.PHONY : ptr_template
+
+# fast build rule for target.
+ptr_template/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
+.PHONY : ptr_template/fast
+
+# Convenience name for target.
 1/CMakeFiles/template_template.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_template.dir/rule
 .PHONY : 1/CMakeFiles/template_template.dir/rule
@@ -335,6 +365,33 @@ template_template/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/1_5.cpp.s
 .PHONY : 1_5.cpp.s
 
+ptr_template.o: ptr_template.cpp.o
+
+.PHONY : ptr_template.o
+
+# target to build an object file
+ptr_template.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/ptr_template.cpp.o
+.PHONY : ptr_template.cpp.o
+
+ptr_template.i: ptr_template.cpp.i
+
+.PHONY : ptr_template.i
+
+# target to preprocess a source file
+ptr_template.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/ptr_template.cpp.i
+.PHONY : ptr_template.cpp.i
+
+ptr_template.s: ptr_template.cpp.s
+
+.PHONY : ptr_template.s
+
+# target to generate assembly for a file
+ptr_template.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/ptr_template.cpp.s
+.PHONY : ptr_template.cpp.s
+
 template_template.o: template_template.cpp.o
 
 .PHONY : template_template.o
@@ -362,6 +419,33 @@ template_template.cpp.s:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/template_template.cpp.s
 .PHONY : template_template.cpp.s
 
+weak_ptr.o: weak_ptr.cpp.o
+
+.PHONY : weak_ptr.o
+
+# target to build an object file
+weak_ptr.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o
+.PHONY : weak_ptr.cpp.o
+
+weak_ptr.i: weak_ptr.cpp.i
+
+.PHONY : weak_ptr.i
+
+# target to preprocess a source file
+weak_ptr.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/weak_ptr.cpp.i
+.PHONY : weak_ptr.cpp.i
+
+weak_ptr.s: weak_ptr.cpp.s
+
+.PHONY : weak_ptr.s
+
+# target to generate assembly for a file
+weak_ptr.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/weak_ptr.cpp.s
+.PHONY : weak_ptr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -370,6 +454,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... weak_ptr"
+	@echo "... ptr_template"
 	@echo "... template_template"
 	@echo "... 1_5"
 	@echo "... 1_4"
@@ -391,9 +477,15 @@ help:
 	@echo "... 1_5.o"
 	@echo "... 1_5.i"
 	@echo "... 1_5.s"
+	@echo "... ptr_template.o"
+	@echo "... ptr_template.i"
+	@echo "... ptr_template.s"
 	@echo "... template_template.o"
 	@echo "... template_template.i"
 	@echo "... template_template.s"
+	@echo "... weak_ptr.o"
+	@echo "... weak_ptr.i"
+	@echo "... weak_ptr.s"
 .PHONY : help
 
 
