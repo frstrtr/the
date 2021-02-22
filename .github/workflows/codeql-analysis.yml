@@ -42,7 +42,7 @@ jobs:
 
     # install dependencies
     - name: boost-install
-      run: sudo apt-get update && sudo apt-get install -yq libboost1.71-dev
+      run: sudo apt-get update && sudo apt-get install libboost-all-dev
     - name: boost-cmake
       run: cmake -S . -B build -DBoost_INCLUDE_DIR=$BOOST_ROOT_1_71_0/include
 
