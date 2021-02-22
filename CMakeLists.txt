@@ -1,5 +1,17 @@
 cmake_minimum_required(VERSION 3.16)
+set(CMAKE_CXX_STANDARD 20)
 project(THE_experiments)
+
+set(Boost_USE_STATIC_LIBS ON)
+
+find_package(Boost 1.71.0 COMPONENTS program_options log log_setup REQUIRED)
+#set(PROJECT_LIB ${PROJECT_LIB} ${Boost_LOG_LIBRARY})
+if(Boost_FOUND)
+	MESSAGE( STATUS "Boost_INCLUDE_DIRS = ${Boost_INCLUDE_DIRS}.")
+    MESSAGE( STATUS "Boost_LIBRARIES = ${BOOST_LIBRARYDIR}.")
+    MESSAGE( STATUS "Boost_LIB_VERSION = ${Boost_LIB_VERSION}.")
+endif()
+
 
 add_subdirectory(par_deriv)
 add_subdirectory(memory)
