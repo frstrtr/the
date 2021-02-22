@@ -11,16 +11,12 @@ public:
     {
     }
 
-    operator int(){
-        return;
-    }
+    // operator int(){
+    //     return;
+    // }
 };
-
-void 
 
 int main()
 {
     shared_ptr<A> a = make_shared<A>(13378);
-    
-
 }

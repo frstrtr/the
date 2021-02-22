@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o -c /home/sl33n/repo/the/1/make_template_shared.cpp",
+  "file": "/home/sl33n/repo/the/1/make_template_shared.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
   "command": "/bin/g++-8    -g   -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repo/the/1/weak_ptr.cpp",
   "file": "/home/sl33n/repo/the/1/weak_ptr.cpp"
 },
@@ -38,6 +43,11 @@
   "directory": "/home/sl33n/repo/the/build/1",
   "command": "/bin/g++-8    -g   -o CMakeFiles/1_2.dir/1_2.cpp.o -c /home/sl33n/repo/the/1/1_2.cpp",
   "file": "/home/sl33n/repo/the/1/1_2.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/1_6.dir/1_6.cpp.o -c /home/sl33n/repo/the/1/1_6.cpp",
+  "file": "/home/sl33n/repo/the/1/1_6.cpp"
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",

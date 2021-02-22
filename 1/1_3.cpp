@@ -22,7 +22,7 @@ public:
 template <typename type>
 class A : public Base<type>
 {
-    Base(type _value) : Base(_value)
+    A(type _value) : Base<type>(_value)
     {
     }
 };
@@ -30,7 +30,7 @@ class A : public Base<type>
 template <typename type>
 class B : public Base<type>
 {
-    Base(type _value) : Base(_value)
+    B(type _value) : Base<type>(_value)
     {
     }
 };

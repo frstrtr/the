@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+1/CMakeFiles/make_template_shared.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/make_template_shared.dir/rule
+.PHONY : 1/CMakeFiles/make_template_shared.dir/rule
+
+# Convenience name for target.
+make_template_shared: 1/CMakeFiles/make_template_shared.dir/rule
+
+.PHONY : make_template_shared
+
+# fast build rule for target.
+make_template_shared/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
+.PHONY : make_template_shared/fast
+
+# Convenience name for target.
 1/CMakeFiles/weak_ptr.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/weak_ptr.dir/rule
 .PHONY : 1/CMakeFiles/weak_ptr.dir/rule
@@ -199,6 +214,21 @@ template_template/fast:
 1_2/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
 .PHONY : 1_2/fast
+
+# Convenience name for target.
+1/CMakeFiles/1_6.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_6.dir/rule
+.PHONY : 1/CMakeFiles/1_6.dir/rule
+
+# Convenience name for target.
+1_6: 1/CMakeFiles/1_6.dir/rule
+
+.PHONY : 1_6
+
+# fast build rule for target.
+1_6/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
+.PHONY : 1_6/fast
 
 # Convenience name for target.
 1/CMakeFiles/1_3.dir/rule:
@@ -365,6 +395,60 @@ template_template/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/1_5.cpp.s
 .PHONY : 1_5.cpp.s
 
+1_6.o: 1_6.cpp.o
+
+.PHONY : 1_6.o
+
+# target to build an object file
+1_6.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/1_6.cpp.o
+.PHONY : 1_6.cpp.o
+
+1_6.i: 1_6.cpp.i
+
+.PHONY : 1_6.i
+
+# target to preprocess a source file
+1_6.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/1_6.cpp.i
+.PHONY : 1_6.cpp.i
+
+1_6.s: 1_6.cpp.s
+
+.PHONY : 1_6.s
+
+# target to generate assembly for a file
+1_6.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/1_6.cpp.s
+.PHONY : 1_6.cpp.s
+
+make_template_shared.o: make_template_shared.cpp.o
+
+.PHONY : make_template_shared.o
+
+# target to build an object file
+make_template_shared.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o
+.PHONY : make_template_shared.cpp.o
+
+make_template_shared.i: make_template_shared.cpp.i
+
+.PHONY : make_template_shared.i
+
+# target to preprocess a source file
+make_template_shared.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/make_template_shared.cpp.i
+.PHONY : make_template_shared.cpp.i
+
+make_template_shared.s: make_template_shared.cpp.s
+
+.PHONY : make_template_shared.s
+
+# target to generate assembly for a file
+make_template_shared.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/make_template_shared.cpp.s
+.PHONY : make_template_shared.cpp.s
+
 ptr_template.o: ptr_template.cpp.o
 
 .PHONY : ptr_template.o
@@ -454,12 +538,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... make_template_shared"
 	@echo "... weak_ptr"
 	@echo "... ptr_template"
 	@echo "... template_template"
 	@echo "... 1_5"
 	@echo "... 1_4"
 	@echo "... 1_2"
+	@echo "... 1_6"
 	@echo "... 1_3"
 	@echo "... 1"
 	@echo "... 1.o"
@@ -477,6 +563,12 @@ help:
 	@echo "... 1_5.o"
 	@echo "... 1_5.i"
 	@echo "... 1_5.s"
+	@echo "... 1_6.o"
+	@echo "... 1_6.i"
+	@echo "... 1_6.s"
+	@echo "... make_template_shared.o"
+	@echo "... make_template_shared.i"
+	@echo "... make_template_shared.s"
 	@echo "... ptr_template.o"
 	@echo "... ptr_template.i"
 	@echo "... ptr_template.s"

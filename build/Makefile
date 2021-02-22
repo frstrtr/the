@@ -137,6 +137,19 @@ memory_array/fast:
 .PHONY : memory_array/fast
 
 #=============================================================================
+# Target rules for targets named make_template_shared
+
+# Build rule for target.
+make_template_shared: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 make_template_shared
+.PHONY : make_template_shared
+
+# fast build rule for target.
+make_template_shared/fast:
+	$(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
+.PHONY : make_template_shared/fast
+
+#=============================================================================
 # Target rules for targets named weak_ptr
 
 # Build rule for target.
@@ -215,6 +228,19 @@ template_template/fast:
 .PHONY : 1_2/fast
 
 #=============================================================================
+# Target rules for targets named 1_6
+
+# Build rule for target.
+1_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_6
+.PHONY : 1_6
+
+# fast build rule for target.
+1_6/fast:
+	$(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
+.PHONY : 1_6/fast
+
+#=============================================================================
 # Target rules for targets named 1_3
 
 # Build rule for target.
@@ -250,12 +276,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
 	@echo "... memory_array"
+	@echo "... make_template_shared"
 	@echo "... weak_ptr"
 	@echo "... ptr_template"
 	@echo "... template_template"
 	@echo "... 1_5"
 	@echo "... 1_4"
 	@echo "... 1_2"
+	@echo "... 1_6"
 	@echo "... 1_3"
 	@echo "... 1"
 .PHONY : help
