@@ -11,7 +11,7 @@ if(Boost_FOUND)
     MESSAGE( STATUS "Boost_LIBRARIES = ${BOOST_LIBRARYDIR}.")
     MESSAGE( STATUS "Boost_LIB_VERSION = ${Boost_LIB_VERSION}.")
 endif()
-
+include_directories(${Boost_INCLUDE_DIRS})
 
 add_subdirectory(par_deriv)
 add_subdirectory(memory)
