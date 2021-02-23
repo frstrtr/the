@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+1/CMakeFiles/template_method.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_method.dir/rule
+.PHONY : 1/CMakeFiles/template_method.dir/rule
+
+# Convenience name for target.
+template_method: 1/CMakeFiles/template_method.dir/rule
+
+.PHONY : template_method
+
+# fast build rule for target.
+template_method/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
+.PHONY : template_method/fast
+
+# Convenience name for target.
 1/CMakeFiles/make_template_shared.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/make_template_shared.dir/rule
 .PHONY : 1/CMakeFiles/make_template_shared.dir/rule
@@ -476,6 +491,33 @@ ptr_template.cpp.s:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/ptr_template.cpp.s
 .PHONY : ptr_template.cpp.s
 
+template_method.o: template_method.cpp.o
+
+.PHONY : template_method.o
+
+# target to build an object file
+template_method.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/template_method.cpp.o
+.PHONY : template_method.cpp.o
+
+template_method.i: template_method.cpp.i
+
+.PHONY : template_method.i
+
+# target to preprocess a source file
+template_method.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/template_method.cpp.i
+.PHONY : template_method.cpp.i
+
+template_method.s: template_method.cpp.s
+
+.PHONY : template_method.s
+
+# target to generate assembly for a file
+template_method.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/template_method.cpp.s
+.PHONY : template_method.cpp.s
+
 template_template.o: template_template.cpp.o
 
 .PHONY : template_template.o
@@ -538,6 +580,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... template_method"
 	@echo "... make_template_shared"
 	@echo "... weak_ptr"
 	@echo "... ptr_template"
@@ -572,6 +615,9 @@ help:
 	@echo "... ptr_template.o"
 	@echo "... ptr_template.i"
 	@echo "... ptr_template.s"
+	@echo "... template_method.o"
+	@echo "... template_method.i"
+	@echo "... template_method.s"
 	@echo "... template_template.o"
 	@echo "... template_template.i"
 	@echo "... template_template.s"

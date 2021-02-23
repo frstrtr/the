@@ -137,6 +137,19 @@ memory_array/fast:
 .PHONY : memory_array/fast
 
 #=============================================================================
+# Target rules for targets named template_method
+
+# Build rule for target.
+template_method: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template_method
+.PHONY : template_method
+
+# fast build rule for target.
+template_method/fast:
+	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
+.PHONY : template_method/fast
+
+#=============================================================================
 # Target rules for targets named make_template_shared
 
 # Build rule for target.
@@ -276,6 +289,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
 	@echo "... memory_array"
+	@echo "... template_method"
 	@echo "... make_template_shared"
 	@echo "... weak_ptr"
 	@echo "... ptr_template"
