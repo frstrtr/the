@@ -6,6 +6,8 @@ class BaseValue
 {
 public:
     virtual void print() = 0;
+
+    virtual void set_value(int i) = 0;
 };
 
 class AValue : public BaseValue
@@ -13,7 +15,7 @@ class AValue : public BaseValue
     int i;
 
 public:
-    void set_value(int _i)
+    void set_value(int _i) override
     {
         i = _i;
     }
@@ -27,9 +29,9 @@ class BValue : public BaseValue
     float i;
 
 public:
-    void set_value(float _i)
+    void set_value(int _i) override
     {
-        i = _i;
+        i = _i + 0.4;
     }
     void print()
     {
@@ -39,9 +41,10 @@ public:
 
 class Base
 {
-    shared_ptr<BaseValue> value;
 
 public:
+    shared_ptr<BaseValue> value;
+
     template <class type>
     void set_value_type()
     {
@@ -56,26 +59,24 @@ class B : public Base
 {
 };
 
-template <class value_type>
 class MainClass
 {
 public:
-    template <class T>
+    template <class T, class T2>
     shared_ptr<T> GenerateBase(float f)
     {
         shared_ptr<T> res = make_shared<T>();
-        res->set_value_type<value_type>();
-        res->set_value(f);
+        res->template set_value_type<T2>();
+        res->value->set_value(f);
+        return res;
     }
 };
 
 int main()
 {
-    MainClass<AValue> m_A;
-    auto _a = m_A.GenerateBase<A>(11);
-
-    
-    MainClass<BValue> m_B;
-    auto _b = m_B.GenerateBase<B>(1337);
-
+    MainClass m;
+    auto _a = m.GenerateBase<A, AValue>(11);
+    _a->value->print();
+    auto _b = m.GenerateBase<B, BValue>(1337);
+    _b->value->print();
 }

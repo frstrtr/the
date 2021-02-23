@@ -20,21 +20,17 @@ Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
-Boost_LOG_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log.so.1.71.0
+Boost_LOG_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log.a
 
-Boost_LOG_SETUP_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log_setup.so.1.71.0
+Boost_LOG_SETUP_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log_setup.a
 
-Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_program_options.a
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/bin/addr2line
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/bin/ar
-
-//For backwards compatibility, what version of CMake commands and
-// syntax should this version of CMake try to support.
-CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
 
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -223,12 +219,6 @@ CMAKE_STRIP:FILEPATH=/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Single output directory for building all executables.
-EXECUTABLE_OUTPUT_PATH:PATH=
-
-//Single output directory for building all libraries.
-LIBRARY_OUTPUT_PATH:PATH=
 
 //Value Computed by CMake
 THE_experiments_BINARY_DIR:STATIC=/home/sl33n/repo/the/build
