@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.o -c /home/sl33n/repo/the/memory/from_obj_to_shared.cpp",
+  "file": "/home/sl33n/repo/the/memory/from_obj_to_shared.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/memory",
   "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/memory_array.dir/memory_array.cpp.o -c /home/sl33n/repo/the/memory/memory_array.cpp",
   "file": "/home/sl33n/repo/the/memory/memory_array.cpp"
 },
@@ -63,5 +68,10 @@
   "directory": "/home/sl33n/repo/the/build/1",
   "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1.dir/1.cpp.o -c /home/sl33n/repo/the/1/1.cpp",
   "file": "/home/sl33n/repo/the/1/1.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/filesystem",
+  "command": "/bin/g++-8  -DBOOST_ALL_NO_LIB  -g   -std=gnu++2a -o CMakeFiles/fs1.dir/1.cpp.o -c /home/sl33n/repo/the/filesystem/1.cpp",
+  "file": "/home/sl33n/repo/the/filesystem/1.cpp"
 }
 ]

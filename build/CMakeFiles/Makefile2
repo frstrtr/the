@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /home/sl33n/repo/the/build
 all: par_deriv/all
 all: memory/all
 all: 1/all
+all: filesystem/all
 
 .PHONY : all
 
@@ -63,6 +64,7 @@ all: 1/all
 preinstall: par_deriv/preinstall
 preinstall: memory/preinstall
 preinstall: 1/preinstall
+preinstall: filesystem/preinstall
 
 .PHONY : preinstall
 
@@ -70,6 +72,7 @@ preinstall: 1/preinstall
 clean: par_deriv/clean
 clean: memory/clean
 clean: 1/clean
+clean: filesystem/clean
 
 .PHONY : clean
 
@@ -112,9 +115,28 @@ clean: 1/clean
 .PHONY : 1/clean
 
 #=============================================================================
+# Directory level rules for directory filesystem
+
+# Recursive "all" directory target.
+filesystem/all: filesystem/CMakeFiles/fs1.dir/all
+
+.PHONY : filesystem/all
+
+# Recursive "preinstall" directory target.
+filesystem/preinstall:
+
+.PHONY : filesystem/preinstall
+
+# Recursive "clean" directory target.
+filesystem/clean: filesystem/CMakeFiles/fs1.dir/clean
+
+.PHONY : filesystem/clean
+
+#=============================================================================
 # Directory level rules for directory memory
 
 # Recursive "all" directory target.
+memory/all: memory/CMakeFiles/from_obj_to_shared.dir/all
 memory/all: memory/CMakeFiles/memory_array.dir/all
 
 .PHONY : memory/all
@@ -125,6 +147,7 @@ memory/preinstall:
 .PHONY : memory/preinstall
 
 # Recursive "clean" directory target.
+memory/clean: memory/CMakeFiles/from_obj_to_shared.dir/clean
 memory/clean: memory/CMakeFiles/memory_array.dir/clean
 
 .PHONY : memory/clean
@@ -154,7 +177,7 @@ par_deriv/clean: par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
 par_deriv/CMakeFiles/shared_this_parent_derived.dir/all:
 	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/depend
 	$(MAKE) -f par_deriv/CMakeFiles/shared_this_parent_derived.dir/build.make par_deriv/CMakeFiles/shared_this_parent_derived.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=19,20 "Built target shared_this_parent_derived"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=23,24 "Built target shared_this_parent_derived"
 .PHONY : par_deriv/CMakeFiles/shared_this_parent_derived.dir/all
 
 # Build rule for subdir invocation for target.
@@ -175,13 +198,40 @@ par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean:
 .PHONY : par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
 
 #=============================================================================
+# Target rules for target memory/CMakeFiles/from_obj_to_shared.dir
+
+# All Build rule for target.
+memory/CMakeFiles/from_obj_to_shared.dir/all:
+	$(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/depend
+	$(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=13,14 "Built target from_obj_to_shared"
+.PHONY : memory/CMakeFiles/from_obj_to_shared.dir/all
+
+# Build rule for subdir invocation for target.
+memory/CMakeFiles/from_obj_to_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/from_obj_to_shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : memory/CMakeFiles/from_obj_to_shared.dir/rule
+
+# Convenience name for target.
+from_obj_to_shared: memory/CMakeFiles/from_obj_to_shared.dir/rule
+
+.PHONY : from_obj_to_shared
+
+# clean rule for target.
+memory/CMakeFiles/from_obj_to_shared.dir/clean:
+	$(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/clean
+.PHONY : memory/CMakeFiles/from_obj_to_shared.dir/clean
+
+#=============================================================================
 # Target rules for target memory/CMakeFiles/memory_array.dir
 
 # All Build rule for target.
 memory/CMakeFiles/memory_array.dir/all:
 	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/depend
 	$(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=15,16 "Built target memory_array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=19,20 "Built target memory_array"
 .PHONY : memory/CMakeFiles/memory_array.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,7 +258,7 @@ memory/CMakeFiles/memory_array.dir/clean:
 1/CMakeFiles/template_method.dir/all:
 	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/depend
 	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=21,22 "Built target template_method"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=25,26 "Built target template_method"
 .PHONY : 1/CMakeFiles/template_method.dir/all
 
 # Build rule for subdir invocation for target.
@@ -235,7 +285,7 @@ template_method: 1/CMakeFiles/template_method.dir/rule
 1/CMakeFiles/make_template_shared.dir/all:
 	$(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/depend
 	$(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=13,14 "Built target make_template_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=17,18 "Built target make_template_shared"
 .PHONY : 1/CMakeFiles/make_template_shared.dir/all
 
 # Build rule for subdir invocation for target.
@@ -262,7 +312,7 @@ make_template_shared: 1/CMakeFiles/make_template_shared.dir/rule
 1/CMakeFiles/weak_ptr.dir/all:
 	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/depend
 	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=25,26 "Built target weak_ptr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=29,30 "Built target weak_ptr"
 .PHONY : 1/CMakeFiles/weak_ptr.dir/all
 
 # Build rule for subdir invocation for target.
@@ -289,7 +339,7 @@ weak_ptr: 1/CMakeFiles/weak_ptr.dir/rule
 1/CMakeFiles/ptr_template.dir/all:
 	$(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/depend
 	$(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=17,18 "Built target ptr_template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=21,22 "Built target ptr_template"
 .PHONY : 1/CMakeFiles/ptr_template.dir/all
 
 # Build rule for subdir invocation for target.
@@ -316,7 +366,7 @@ ptr_template: 1/CMakeFiles/ptr_template.dir/rule
 1/CMakeFiles/template_template.dir/all:
 	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/depend
 	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=23,24 "Built target template_template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=27,28 "Built target template_template"
 .PHONY : 1/CMakeFiles/template_template.dir/all
 
 # Build rule for subdir invocation for target.
@@ -497,6 +547,33 @@ template_template: 1/CMakeFiles/template_template.dir/rule
 1/CMakeFiles/1.dir/clean:
 	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/clean
 .PHONY : 1/CMakeFiles/1.dir/clean
+
+#=============================================================================
+# Target rules for target filesystem/CMakeFiles/fs1.dir
+
+# All Build rule for target.
+filesystem/CMakeFiles/fs1.dir/all:
+	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/depend
+	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repo/the/build/CMakeFiles --progress-num=15,16 "Built target fs1"
+.PHONY : filesystem/CMakeFiles/fs1.dir/all
+
+# Build rule for subdir invocation for target.
+filesystem/CMakeFiles/fs1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 filesystem/CMakeFiles/fs1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+.PHONY : filesystem/CMakeFiles/fs1.dir/rule
+
+# Convenience name for target.
+fs1: filesystem/CMakeFiles/fs1.dir/rule
+
+.PHONY : fs1
+
+# clean rule for target.
+filesystem/CMakeFiles/fs1.dir/clean:
+	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/clean
+.PHONY : filesystem/CMakeFiles/fs1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

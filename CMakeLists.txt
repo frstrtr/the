@@ -4,7 +4,7 @@ project(THE_experiments)
 
 set(Boost_USE_STATIC_LIBS ON)
 
-find_package(Boost 1.71.0 COMPONENTS program_options log log_setup REQUIRED)
+find_package(Boost 1.71.0 COMPONENTS filesystem system program_options log log_setup REQUIRED)
 #set(PROJECT_LIB ${PROJECT_LIB} ${Boost_LOG_LIBRARY})
 if(Boost_FOUND)
 	MESSAGE( STATUS "Boost_INCLUDE_DIRS = ${Boost_INCLUDE_DIRS}.")
@@ -16,3 +16,4 @@ include_directories(${Boost_INCLUDE_DIRS})
 add_subdirectory(par_deriv)
 add_subdirectory(memory)
 add_subdirectory(1)
+add_subdirectory(filesystem)

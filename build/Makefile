@@ -124,6 +124,19 @@ shared_this_parent_derived/fast:
 .PHONY : shared_this_parent_derived/fast
 
 #=============================================================================
+# Target rules for targets named from_obj_to_shared
+
+# Build rule for target.
+from_obj_to_shared: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 from_obj_to_shared
+.PHONY : from_obj_to_shared
+
+# fast build rule for target.
+from_obj_to_shared/fast:
+	$(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/build
+.PHONY : from_obj_to_shared/fast
+
+#=============================================================================
 # Target rules for targets named memory_array
 
 # Build rule for target.
@@ -279,6 +292,19 @@ template_template/fast:
 	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
 .PHONY : 1/fast
 
+#=============================================================================
+# Target rules for targets named fs1
+
+# Build rule for target.
+fs1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fs1
+.PHONY : fs1
+
+# fast build rule for target.
+fs1/fast:
+	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/build
+.PHONY : fs1/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,6 +314,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
+	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
 	@echo "... template_method"
 	@echo "... make_template_shared"
@@ -300,6 +327,7 @@ help:
 	@echo "... 1_6"
 	@echo "... 1_3"
 	@echo "... 1"
+	@echo "... fs1"
 .PHONY : help
 
 

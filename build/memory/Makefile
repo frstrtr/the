@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+memory/CMakeFiles/from_obj_to_shared.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/from_obj_to_shared.dir/rule
+.PHONY : memory/CMakeFiles/from_obj_to_shared.dir/rule
+
+# Convenience name for target.
+from_obj_to_shared: memory/CMakeFiles/from_obj_to_shared.dir/rule
+
+.PHONY : from_obj_to_shared
+
+# fast build rule for target.
+from_obj_to_shared/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/build
+.PHONY : from_obj_to_shared/fast
+
+# Convenience name for target.
 memory/CMakeFiles/memory_array.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/memory_array.dir/rule
 .PHONY : memory/CMakeFiles/memory_array.dir/rule
@@ -124,6 +139,33 @@ memory_array: memory/CMakeFiles/memory_array.dir/rule
 memory_array/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
 .PHONY : memory_array/fast
+
+from_obj_to_shared.o: from_obj_to_shared.cpp.o
+
+.PHONY : from_obj_to_shared.o
+
+# target to build an object file
+from_obj_to_shared.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.o
+.PHONY : from_obj_to_shared.cpp.o
+
+from_obj_to_shared.i: from_obj_to_shared.cpp.i
+
+.PHONY : from_obj_to_shared.i
+
+# target to preprocess a source file
+from_obj_to_shared.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.i
+.PHONY : from_obj_to_shared.cpp.i
+
+from_obj_to_shared.s: from_obj_to_shared.cpp.s
+
+.PHONY : from_obj_to_shared.s
+
+# target to generate assembly for a file
+from_obj_to_shared.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/from_obj_to_shared.dir/build.make memory/CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.s
+.PHONY : from_obj_to_shared.cpp.s
 
 memory_array.o: memory_array.cpp.o
 
@@ -160,7 +202,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
+	@echo "... from_obj_to_shared.o"
+	@echo "... from_obj_to_shared.i"
+	@echo "... from_obj_to_shared.s"
 	@echo "... memory_array.o"
 	@echo "... memory_array.i"
 	@echo "... memory_array.s"
