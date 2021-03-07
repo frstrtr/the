@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/boost_function.dir/boost_function.cpp.o -c /home/sl33n/repo/the/memory/boost_function.cpp",
+  "file": "/home/sl33n/repo/the/memory/boost_function.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/memory",
   "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.o -c /home/sl33n/repo/the/memory/from_obj_to_shared.cpp",
   "file": "/home/sl33n/repo/the/memory/from_obj_to_shared.cpp"
 },

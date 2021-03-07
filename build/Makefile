@@ -124,6 +124,19 @@ shared_this_parent_derived/fast:
 .PHONY : shared_this_parent_derived/fast
 
 #=============================================================================
+# Target rules for targets named boost_function
+
+# Build rule for target.
+boost_function: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_function
+.PHONY : boost_function
+
+# fast build rule for target.
+boost_function/fast:
+	$(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/build
+.PHONY : boost_function/fast
+
+#=============================================================================
 # Target rules for targets named from_obj_to_shared
 
 # Build rule for target.
@@ -314,6 +327,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... shared_this_parent_derived"
+	@echo "... boost_function"
 	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
 	@echo "... template_method"

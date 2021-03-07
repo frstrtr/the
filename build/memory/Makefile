@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+memory/CMakeFiles/boost_function.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/boost_function.dir/rule
+.PHONY : memory/CMakeFiles/boost_function.dir/rule
+
+# Convenience name for target.
+boost_function: memory/CMakeFiles/boost_function.dir/rule
+
+.PHONY : boost_function
+
+# fast build rule for target.
+boost_function/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/build
+.PHONY : boost_function/fast
+
+# Convenience name for target.
 memory/CMakeFiles/from_obj_to_shared.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/from_obj_to_shared.dir/rule
 .PHONY : memory/CMakeFiles/from_obj_to_shared.dir/rule
@@ -139,6 +154,33 @@ memory_array: memory/CMakeFiles/memory_array.dir/rule
 memory_array/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
 .PHONY : memory_array/fast
+
+boost_function.o: boost_function.cpp.o
+
+.PHONY : boost_function.o
+
+# target to build an object file
+boost_function.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/boost_function.cpp.o
+.PHONY : boost_function.cpp.o
+
+boost_function.i: boost_function.cpp.i
+
+.PHONY : boost_function.i
+
+# target to preprocess a source file
+boost_function.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/boost_function.cpp.i
+.PHONY : boost_function.cpp.i
+
+boost_function.s: boost_function.cpp.s
+
+.PHONY : boost_function.s
+
+# target to generate assembly for a file
+boost_function.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/boost_function.cpp.s
+.PHONY : boost_function.cpp.s
 
 from_obj_to_shared.o: from_obj_to_shared.cpp.o
 
@@ -202,8 +244,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... boost_function"
 	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
+	@echo "... boost_function.o"
+	@echo "... boost_function.i"
+	@echo "... boost_function.s"
 	@echo "... from_obj_to_shared.o"
 	@echo "... from_obj_to_shared.i"
 	@echo "... from_obj_to_shared.s"

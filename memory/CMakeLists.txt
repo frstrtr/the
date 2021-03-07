@@ -1,2 +1,3 @@
 add_executable(memory_array memory_array.cpp)
 add_executable(from_obj_to_shared from_obj_to_shared.cpp)
+add_executable(boost_function boost_function.cpp)
