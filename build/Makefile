@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sl33n/repo/the
+CMAKE_SOURCE_DIR = /home/sl33n/repository/the
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sl33n/repo/the/build
+CMAKE_BINARY_DIR = /home/sl33n/repository/the/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles /home/sl33n/repo/the/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles /home/sl33n/repository/the/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -163,121 +163,17 @@ memory_array/fast:
 .PHONY : memory_array/fast
 
 #=============================================================================
-# Target rules for targets named template_method
+# Target rules for targets named 1
 
 # Build rule for target.
-template_method: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 template_method
-.PHONY : template_method
+1 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1
+.PHONY : 1
 
 # fast build rule for target.
-template_method/fast:
-	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
-.PHONY : template_method/fast
-
-#=============================================================================
-# Target rules for targets named make_template_shared
-
-# Build rule for target.
-make_template_shared: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 make_template_shared
-.PHONY : make_template_shared
-
-# fast build rule for target.
-make_template_shared/fast:
-	$(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
-.PHONY : make_template_shared/fast
-
-#=============================================================================
-# Target rules for targets named weak_ptr
-
-# Build rule for target.
-weak_ptr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 weak_ptr
-.PHONY : weak_ptr
-
-# fast build rule for target.
-weak_ptr/fast:
-	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
-.PHONY : weak_ptr/fast
-
-#=============================================================================
-# Target rules for targets named ptr_template
-
-# Build rule for target.
-ptr_template: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ptr_template
-.PHONY : ptr_template
-
-# fast build rule for target.
-ptr_template/fast:
-	$(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
-.PHONY : ptr_template/fast
-
-#=============================================================================
-# Target rules for targets named template_template
-
-# Build rule for target.
-template_template: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 template_template
-.PHONY : template_template
-
-# fast build rule for target.
-template_template/fast:
-	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
-.PHONY : template_template/fast
-
-#=============================================================================
-# Target rules for targets named 1_5
-
-# Build rule for target.
-1_5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_5
-.PHONY : 1_5
-
-# fast build rule for target.
-1_5/fast:
-	$(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
-.PHONY : 1_5/fast
-
-#=============================================================================
-# Target rules for targets named 1_4
-
-# Build rule for target.
-1_4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_4
-.PHONY : 1_4
-
-# fast build rule for target.
-1_4/fast:
-	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
-.PHONY : 1_4/fast
-
-#=============================================================================
-# Target rules for targets named 1_2
-
-# Build rule for target.
-1_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_2
-.PHONY : 1_2
-
-# fast build rule for target.
-1_2/fast:
-	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
-.PHONY : 1_2/fast
-
-#=============================================================================
-# Target rules for targets named 1_6
-
-# Build rule for target.
-1_6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1_6
-.PHONY : 1_6
-
-# fast build rule for target.
-1_6/fast:
-	$(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
-.PHONY : 1_6/fast
+1/fast:
+	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
+.PHONY : 1/fast
 
 #=============================================================================
 # Target rules for targets named 1_3
@@ -293,17 +189,147 @@ template_template/fast:
 .PHONY : 1_3/fast
 
 #=============================================================================
-# Target rules for targets named 1
+# Target rules for targets named 1_6
 
 # Build rule for target.
-1 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 1
-.PHONY : 1
+1_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_6
+.PHONY : 1_6
 
 # fast build rule for target.
-1/fast:
-	$(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
-.PHONY : 1/fast
+1_6/fast:
+	$(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
+.PHONY : 1_6/fast
+
+#=============================================================================
+# Target rules for targets named 1_2
+
+# Build rule for target.
+1_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_2
+.PHONY : 1_2
+
+# fast build rule for target.
+1_2/fast:
+	$(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
+.PHONY : 1_2/fast
+
+#=============================================================================
+# Target rules for targets named 1_4
+
+# Build rule for target.
+1_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_4
+.PHONY : 1_4
+
+# fast build rule for target.
+1_4/fast:
+	$(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
+.PHONY : 1_4/fast
+
+#=============================================================================
+# Target rules for targets named 1_5
+
+# Build rule for target.
+1_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_5
+.PHONY : 1_5
+
+# fast build rule for target.
+1_5/fast:
+	$(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
+.PHONY : 1_5/fast
+
+#=============================================================================
+# Target rules for targets named template_template
+
+# Build rule for target.
+template_template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template_template
+.PHONY : template_template
+
+# fast build rule for target.
+template_template/fast:
+	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
+.PHONY : template_template/fast
+
+#=============================================================================
+# Target rules for targets named ptr_template
+
+# Build rule for target.
+ptr_template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ptr_template
+.PHONY : ptr_template
+
+# fast build rule for target.
+ptr_template/fast:
+	$(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
+.PHONY : ptr_template/fast
+
+#=============================================================================
+# Target rules for targets named weak_ptr
+
+# Build rule for target.
+weak_ptr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 weak_ptr
+.PHONY : weak_ptr
+
+# fast build rule for target.
+weak_ptr/fast:
+	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
+.PHONY : weak_ptr/fast
+
+#=============================================================================
+# Target rules for targets named template_method
+
+# Build rule for target.
+template_method: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template_method
+.PHONY : template_method
+
+# fast build rule for target.
+template_method/fast:
+	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
+.PHONY : template_method/fast
+
+#=============================================================================
+# Target rules for targets named struct_test
+
+# Build rule for target.
+struct_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 struct_test
+.PHONY : struct_test
+
+# fast build rule for target.
+struct_test/fast:
+	$(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/build
+.PHONY : struct_test/fast
+
+#=============================================================================
+# Target rules for targets named make_template_shared
+
+# Build rule for target.
+make_template_shared: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 make_template_shared
+.PHONY : make_template_shared
+
+# fast build rule for target.
+make_template_shared/fast:
+	$(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
+.PHONY : make_template_shared/fast
+
+#=============================================================================
+# Target rules for targets named throw_test
+
+# Build rule for target.
+throw_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 throw_test
+.PHONY : throw_test
+
+# fast build rule for target.
+throw_test/fast:
+	$(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/build
+.PHONY : throw_test/fast
 
 #=============================================================================
 # Target rules for targets named fs1
@@ -330,17 +356,19 @@ help:
 	@echo "... boost_function"
 	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
-	@echo "... template_method"
-	@echo "... make_template_shared"
-	@echo "... weak_ptr"
-	@echo "... ptr_template"
-	@echo "... template_template"
-	@echo "... 1_5"
-	@echo "... 1_4"
-	@echo "... 1_2"
-	@echo "... 1_6"
-	@echo "... 1_3"
 	@echo "... 1"
+	@echo "... 1_3"
+	@echo "... 1_6"
+	@echo "... 1_2"
+	@echo "... 1_4"
+	@echo "... 1_5"
+	@echo "... template_template"
+	@echo "... ptr_template"
+	@echo "... weak_ptr"
+	@echo "... template_method"
+	@echo "... struct_test"
+	@echo "... make_template_shared"
+	@echo "... throw_test"
 	@echo "... fs1"
 .PHONY : help
 
