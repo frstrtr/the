@@ -1,0 +1,1 @@
+add_executable(sof_1 sof_1.cpp)
