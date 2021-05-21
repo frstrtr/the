@@ -91,6 +91,11 @@
 },
 {
   "directory": "/home/sl33n/repository/the/build/sof",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1_test1.dir/sof_1_test1.cpp.o -c /home/sl33n/repository/the/sof/sof_1_test1.cpp",
+  "file": "/home/sl33n/repository/the/sof/sof_1_test1.cpp"
+},
+{
+  "directory": "/home/sl33n/repository/the/build/sof",
   "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1.dir/sof_1.cpp.o -c /home/sl33n/repository/the/sof/sof_1.cpp",
   "file": "/home/sl33n/repository/the/sof/sof_1.cpp"
 }

@@ -126,5 +126,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "1/CMakeFiles/make_template_shared.dir/DependInfo.cmake"
   "1/CMakeFiles/throw_test.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/fs1.dir/DependInfo.cmake"
+  "sof/CMakeFiles/sof_1_test1.dir/DependInfo.cmake"
   "sof/CMakeFiles/sof_1.dir/DependInfo.cmake"
   )

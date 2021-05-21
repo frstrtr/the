@@ -345,6 +345,19 @@ fs1/fast:
 .PHONY : fs1/fast
 
 #=============================================================================
+# Target rules for targets named sof_1_test1
+
+# Build rule for target.
+sof_1_test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sof_1_test1
+.PHONY : sof_1_test1
+
+# fast build rule for target.
+sof_1_test1/fast:
+	$(MAKE) -f sof/CMakeFiles/sof_1_test1.dir/build.make sof/CMakeFiles/sof_1_test1.dir/build
+.PHONY : sof_1_test1/fast
+
+#=============================================================================
 # Target rules for targets named sof_1
 
 # Build rule for target.
@@ -383,6 +396,7 @@ help:
 	@echo "... make_template_shared"
 	@echo "... throw_test"
 	@echo "... fs1"
+	@echo "... sof_1_test1"
 	@echo "... sof_1"
 .PHONY : help
 
