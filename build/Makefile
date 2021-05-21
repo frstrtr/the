@@ -344,6 +344,19 @@ fs1/fast:
 	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/build
 .PHONY : fs1/fast
 
+#=============================================================================
+# Target rules for targets named sof_1
+
+# Build rule for target.
+sof_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sof_1
+.PHONY : sof_1
+
+# fast build rule for target.
+sof_1/fast:
+	$(MAKE) -f sof/CMakeFiles/sof_1.dir/build.make sof/CMakeFiles/sof_1.dir/build
+.PHONY : sof_1/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -370,6 +383,7 @@ help:
 	@echo "... make_template_shared"
 	@echo "... throw_test"
 	@echo "... fs1"
+	@echo "... sof_1"
 .PHONY : help
 
 

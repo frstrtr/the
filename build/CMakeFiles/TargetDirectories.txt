@@ -26,3 +26,6 @@
 /home/sl33n/repository/the/build/filesystem/CMakeFiles/rebuild_cache.dir
 /home/sl33n/repository/the/build/filesystem/CMakeFiles/edit_cache.dir
 /home/sl33n/repository/the/build/filesystem/CMakeFiles/fs1.dir
+/home/sl33n/repository/the/build/sof/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repository/the/build/sof/CMakeFiles/edit_cache.dir
+/home/sl33n/repository/the/build/sof/CMakeFiles/sof_1.dir

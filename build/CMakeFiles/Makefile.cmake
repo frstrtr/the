@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../filesystem/CMakeLists.txt"
   "../memory/CMakeLists.txt"
   "../par_deriv/CMakeLists.txt"
+  "../sof/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.71.0.cmake"
@@ -102,6 +103,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "memory/CMakeFiles/CMakeDirectoryInformation.cmake"
   "1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "filesystem/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sof/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -124,4 +126,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "1/CMakeFiles/make_template_shared.dir/DependInfo.cmake"
   "1/CMakeFiles/throw_test.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/fs1.dir/DependInfo.cmake"
+  "sof/CMakeFiles/sof_1.dir/DependInfo.cmake"
   )

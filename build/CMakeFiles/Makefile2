@@ -57,6 +57,7 @@ all: par_deriv/all
 all: memory/all
 all: 1/all
 all: filesystem/all
+all: sof/all
 
 .PHONY : all
 
@@ -65,6 +66,7 @@ preinstall: par_deriv/preinstall
 preinstall: memory/preinstall
 preinstall: 1/preinstall
 preinstall: filesystem/preinstall
+preinstall: sof/preinstall
 
 .PHONY : preinstall
 
@@ -73,6 +75,7 @@ clean: par_deriv/clean
 clean: memory/clean
 clean: 1/clean
 clean: filesystem/clean
+clean: sof/clean
 
 .PHONY : clean
 
@@ -175,6 +178,24 @@ par_deriv/preinstall:
 par_deriv/clean: par_deriv/CMakeFiles/shared_this_parent_derived.dir/clean
 
 .PHONY : par_deriv/clean
+
+#=============================================================================
+# Directory level rules for directory sof
+
+# Recursive "all" directory target.
+sof/all: sof/CMakeFiles/sof_1.dir/all
+
+.PHONY : sof/all
+
+# Recursive "preinstall" directory target.
+sof/preinstall:
+
+.PHONY : sof/preinstall
+
+# Recursive "clean" directory target.
+sof/clean: sof/CMakeFiles/sof_1.dir/clean
+
+.PHONY : sof/clean
 
 #=============================================================================
 # Target rules for target par_deriv/CMakeFiles/shared_this_parent_derived.dir
@@ -453,7 +474,7 @@ memory/CMakeFiles/memory_array.dir/clean:
 1/CMakeFiles/template_template.dir/all:
 	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/depend
 	$(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=31,32 "Built target template_template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=33,34 "Built target template_template"
 .PHONY : 1/CMakeFiles/template_template.dir/all
 
 # Build rule for subdir invocation for target.
@@ -507,7 +528,7 @@ ptr_template: 1/CMakeFiles/ptr_template.dir/rule
 1/CMakeFiles/weak_ptr.dir/all:
 	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/depend
 	$(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=35,36 "Built target weak_ptr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=37,38 "Built target weak_ptr"
 .PHONY : 1/CMakeFiles/weak_ptr.dir/all
 
 # Build rule for subdir invocation for target.
@@ -534,7 +555,7 @@ weak_ptr: 1/CMakeFiles/weak_ptr.dir/rule
 1/CMakeFiles/template_method.dir/all:
 	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/depend
 	$(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=29,30 "Built target template_method"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=31,32 "Built target template_method"
 .PHONY : 1/CMakeFiles/template_method.dir/all
 
 # Build rule for subdir invocation for target.
@@ -561,7 +582,7 @@ template_method: 1/CMakeFiles/template_method.dir/rule
 1/CMakeFiles/struct_test.dir/all:
 	$(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/depend
 	$(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=27,28 "Built target struct_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=29,30 "Built target struct_test"
 .PHONY : 1/CMakeFiles/struct_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -615,7 +636,7 @@ make_template_shared: 1/CMakeFiles/make_template_shared.dir/rule
 1/CMakeFiles/throw_test.dir/all:
 	$(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/depend
 	$(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=33,34 "Built target throw_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=35,36 "Built target throw_test"
 .PHONY : 1/CMakeFiles/throw_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -661,6 +682,33 @@ fs1: filesystem/CMakeFiles/fs1.dir/rule
 filesystem/CMakeFiles/fs1.dir/clean:
 	$(MAKE) -f filesystem/CMakeFiles/fs1.dir/build.make filesystem/CMakeFiles/fs1.dir/clean
 .PHONY : filesystem/CMakeFiles/fs1.dir/clean
+
+#=============================================================================
+# Target rules for target sof/CMakeFiles/sof_1.dir
+
+# All Build rule for target.
+sof/CMakeFiles/sof_1.dir/all:
+	$(MAKE) -f sof/CMakeFiles/sof_1.dir/build.make sof/CMakeFiles/sof_1.dir/depend
+	$(MAKE) -f sof/CMakeFiles/sof_1.dir/build.make sof/CMakeFiles/sof_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sl33n/repository/the/build/CMakeFiles --progress-num=27,28 "Built target sof_1"
+.PHONY : sof/CMakeFiles/sof_1.dir/all
+
+# Build rule for subdir invocation for target.
+sof/CMakeFiles/sof_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sof/CMakeFiles/sof_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles 0
+.PHONY : sof/CMakeFiles/sof_1.dir/rule
+
+# Convenience name for target.
+sof_1: sof/CMakeFiles/sof_1.dir/rule
+
+.PHONY : sof_1
+
+# clean rule for target.
+sof/CMakeFiles/sof_1.dir/clean:
+	$(MAKE) -f sof/CMakeFiles/sof_1.dir/build.make sof/CMakeFiles/sof_1.dir/clean
+.PHONY : sof/CMakeFiles/sof_1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
