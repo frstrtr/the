@@ -6,6 +6,8 @@
 /home/sl33n/repo/the/build/memory/CMakeFiles/rebuild_cache.dir
 /home/sl33n/repo/the/build/memory/CMakeFiles/edit_cache.dir
 /home/sl33n/repo/the/build/memory/CMakeFiles/boost_function.dir
+/home/sl33n/repo/the/build/memory/CMakeFiles/any_args.dir
+/home/sl33n/repo/the/build/memory/CMakeFiles/data_convert.dir
 /home/sl33n/repo/the/build/memory/CMakeFiles/from_obj_to_shared.dir
 /home/sl33n/repo/the/build/memory/CMakeFiles/memory_array.dir
 /home/sl33n/repo/the/build/1/CMakeFiles/rebuild_cache.dir
@@ -24,3 +26,12 @@
 /home/sl33n/repo/the/build/filesystem/CMakeFiles/rebuild_cache.dir
 /home/sl33n/repo/the/build/filesystem/CMakeFiles/edit_cache.dir
 /home/sl33n/repo/the/build/filesystem/CMakeFiles/fs1.dir
+/home/sl33n/repo/the/build/boost_tests/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repo/the/build/boost_tests/CMakeFiles/edit_cache.dir
+/home/sl33n/repo/the/build/boost_tests/CMakeFiles/po_enum.dir
+/home/sl33n/repo/the/build/curl/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repo/the/build/curl/CMakeFiles/edit_cache.dir
+/home/sl33n/repo/the/build/curl/CMakeFiles/curl1.dir
+/home/sl33n/repo/the/build/2/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repo/the/build/2/CMakeFiles/edit_cache.dir
+/home/sl33n/repo/the/build/2/CMakeFiles/2_1.dir

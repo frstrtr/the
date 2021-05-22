@@ -126,6 +126,36 @@ boost_function/fast:
 .PHONY : boost_function/fast
 
 # Convenience name for target.
+memory/CMakeFiles/any_args.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/any_args.dir/rule
+.PHONY : memory/CMakeFiles/any_args.dir/rule
+
+# Convenience name for target.
+any_args: memory/CMakeFiles/any_args.dir/rule
+
+.PHONY : any_args
+
+# fast build rule for target.
+any_args/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/any_args.dir/build.make memory/CMakeFiles/any_args.dir/build
+.PHONY : any_args/fast
+
+# Convenience name for target.
+memory/CMakeFiles/data_convert.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/data_convert.dir/rule
+.PHONY : memory/CMakeFiles/data_convert.dir/rule
+
+# Convenience name for target.
+data_convert: memory/CMakeFiles/data_convert.dir/rule
+
+.PHONY : data_convert
+
+# fast build rule for target.
+data_convert/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/data_convert.dir/build.make memory/CMakeFiles/data_convert.dir/build
+.PHONY : data_convert/fast
+
+# Convenience name for target.
 memory/CMakeFiles/from_obj_to_shared.dir/rule:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 memory/CMakeFiles/from_obj_to_shared.dir/rule
 .PHONY : memory/CMakeFiles/from_obj_to_shared.dir/rule
@@ -155,6 +185,33 @@ memory_array/fast:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/memory_array.dir/build.make memory/CMakeFiles/memory_array.dir/build
 .PHONY : memory_array/fast
 
+any_args.o: any_args.cpp.o
+
+.PHONY : any_args.o
+
+# target to build an object file
+any_args.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/any_args.dir/build.make memory/CMakeFiles/any_args.dir/any_args.cpp.o
+.PHONY : any_args.cpp.o
+
+any_args.i: any_args.cpp.i
+
+.PHONY : any_args.i
+
+# target to preprocess a source file
+any_args.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/any_args.dir/build.make memory/CMakeFiles/any_args.dir/any_args.cpp.i
+.PHONY : any_args.cpp.i
+
+any_args.s: any_args.cpp.s
+
+.PHONY : any_args.s
+
+# target to generate assembly for a file
+any_args.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/any_args.dir/build.make memory/CMakeFiles/any_args.dir/any_args.cpp.s
+.PHONY : any_args.cpp.s
+
 boost_function.o: boost_function.cpp.o
 
 .PHONY : boost_function.o
@@ -181,6 +238,33 @@ boost_function.s: boost_function.cpp.s
 boost_function.cpp.s:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/boost_function.dir/build.make memory/CMakeFiles/boost_function.dir/boost_function.cpp.s
 .PHONY : boost_function.cpp.s
+
+data_convert.o: data_convert.cpp.o
+
+.PHONY : data_convert.o
+
+# target to build an object file
+data_convert.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/data_convert.dir/build.make memory/CMakeFiles/data_convert.dir/data_convert.cpp.o
+.PHONY : data_convert.cpp.o
+
+data_convert.i: data_convert.cpp.i
+
+.PHONY : data_convert.i
+
+# target to preprocess a source file
+data_convert.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/data_convert.dir/build.make memory/CMakeFiles/data_convert.dir/data_convert.cpp.i
+.PHONY : data_convert.cpp.i
+
+data_convert.s: data_convert.cpp.s
+
+.PHONY : data_convert.s
+
+# target to generate assembly for a file
+data_convert.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f memory/CMakeFiles/data_convert.dir/build.make memory/CMakeFiles/data_convert.dir/data_convert.cpp.s
+.PHONY : data_convert.cpp.s
 
 from_obj_to_shared.o: from_obj_to_shared.cpp.o
 
@@ -245,11 +329,19 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... boost_function"
+	@echo "... any_args"
+	@echo "... data_convert"
 	@echo "... from_obj_to_shared"
 	@echo "... memory_array"
+	@echo "... any_args.o"
+	@echo "... any_args.i"
+	@echo "... any_args.s"
 	@echo "... boost_function.o"
 	@echo "... boost_function.i"
 	@echo "... boost_function.s"
+	@echo "... data_convert.o"
+	@echo "... data_convert.i"
+	@echo "... data_convert.s"
 	@echo "... from_obj_to_shared.o"
 	@echo "... from_obj_to_shared.i"
 	@echo "... from_obj_to_shared.s"
