@@ -111,139 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-1/CMakeFiles/template_method.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_method.dir/rule
-.PHONY : 1/CMakeFiles/template_method.dir/rule
+1/CMakeFiles/1.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1.dir/rule
+.PHONY : 1/CMakeFiles/1.dir/rule
 
 # Convenience name for target.
-template_method: 1/CMakeFiles/template_method.dir/rule
+1 : 1/CMakeFiles/1.dir/rule
 
-.PHONY : template_method
+.PHONY : 1
 
 # fast build rule for target.
-template_method/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
-.PHONY : template_method/fast
-
-# Convenience name for target.
-1/CMakeFiles/make_template_shared.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/make_template_shared.dir/rule
-.PHONY : 1/CMakeFiles/make_template_shared.dir/rule
-
-# Convenience name for target.
-make_template_shared: 1/CMakeFiles/make_template_shared.dir/rule
-
-.PHONY : make_template_shared
-
-# fast build rule for target.
-make_template_shared/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
-.PHONY : make_template_shared/fast
-
-# Convenience name for target.
-1/CMakeFiles/weak_ptr.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/weak_ptr.dir/rule
-.PHONY : 1/CMakeFiles/weak_ptr.dir/rule
-
-# Convenience name for target.
-weak_ptr: 1/CMakeFiles/weak_ptr.dir/rule
-
-.PHONY : weak_ptr
-
-# fast build rule for target.
-weak_ptr/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
-.PHONY : weak_ptr/fast
-
-# Convenience name for target.
-1/CMakeFiles/ptr_template.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/ptr_template.dir/rule
-.PHONY : 1/CMakeFiles/ptr_template.dir/rule
-
-# Convenience name for target.
-ptr_template: 1/CMakeFiles/ptr_template.dir/rule
-
-.PHONY : ptr_template
-
-# fast build rule for target.
-ptr_template/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
-.PHONY : ptr_template/fast
-
-# Convenience name for target.
-1/CMakeFiles/template_template.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_template.dir/rule
-.PHONY : 1/CMakeFiles/template_template.dir/rule
-
-# Convenience name for target.
-template_template: 1/CMakeFiles/template_template.dir/rule
-
-.PHONY : template_template
-
-# fast build rule for target.
-template_template/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
-.PHONY : template_template/fast
-
-# Convenience name for target.
-1/CMakeFiles/1_5.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_5.dir/rule
-.PHONY : 1/CMakeFiles/1_5.dir/rule
-
-# Convenience name for target.
-1_5: 1/CMakeFiles/1_5.dir/rule
-
-.PHONY : 1_5
-
-# fast build rule for target.
-1_5/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
-.PHONY : 1_5/fast
-
-# Convenience name for target.
-1/CMakeFiles/1_4.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_4.dir/rule
-.PHONY : 1/CMakeFiles/1_4.dir/rule
-
-# Convenience name for target.
-1_4: 1/CMakeFiles/1_4.dir/rule
-
-.PHONY : 1_4
-
-# fast build rule for target.
-1_4/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
-.PHONY : 1_4/fast
-
-# Convenience name for target.
-1/CMakeFiles/1_2.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_2.dir/rule
-.PHONY : 1/CMakeFiles/1_2.dir/rule
-
-# Convenience name for target.
-1_2: 1/CMakeFiles/1_2.dir/rule
-
-.PHONY : 1_2
-
-# fast build rule for target.
-1_2/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
-.PHONY : 1_2/fast
-
-# Convenience name for target.
-1/CMakeFiles/1_6.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_6.dir/rule
-.PHONY : 1/CMakeFiles/1_6.dir/rule
-
-# Convenience name for target.
-1_6: 1/CMakeFiles/1_6.dir/rule
-
-.PHONY : 1_6
-
-# fast build rule for target.
-1_6/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
-.PHONY : 1_6/fast
+1/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
+.PHONY : 1/fast
 
 # Convenience name for target.
 1/CMakeFiles/1_3.dir/rule:
@@ -261,19 +141,169 @@ template_template/fast:
 .PHONY : 1_3/fast
 
 # Convenience name for target.
-1/CMakeFiles/1.dir/rule:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1.dir/rule
-.PHONY : 1/CMakeFiles/1.dir/rule
+1/CMakeFiles/1_6.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_6.dir/rule
+.PHONY : 1/CMakeFiles/1_6.dir/rule
 
 # Convenience name for target.
-1 : 1/CMakeFiles/1.dir/rule
+1_6: 1/CMakeFiles/1_6.dir/rule
 
-.PHONY : 1
+.PHONY : 1_6
 
 # fast build rule for target.
-1/fast:
-	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1.dir/build.make 1/CMakeFiles/1.dir/build
-.PHONY : 1/fast
+1_6/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_6.dir/build.make 1/CMakeFiles/1_6.dir/build
+.PHONY : 1_6/fast
+
+# Convenience name for target.
+1/CMakeFiles/1_2.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_2.dir/rule
+.PHONY : 1/CMakeFiles/1_2.dir/rule
+
+# Convenience name for target.
+1_2: 1/CMakeFiles/1_2.dir/rule
+
+.PHONY : 1_2
+
+# fast build rule for target.
+1_2/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_2.dir/build.make 1/CMakeFiles/1_2.dir/build
+.PHONY : 1_2/fast
+
+# Convenience name for target.
+1/CMakeFiles/1_4.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_4.dir/rule
+.PHONY : 1/CMakeFiles/1_4.dir/rule
+
+# Convenience name for target.
+1_4: 1/CMakeFiles/1_4.dir/rule
+
+.PHONY : 1_4
+
+# fast build rule for target.
+1_4/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_4.dir/build.make 1/CMakeFiles/1_4.dir/build
+.PHONY : 1_4/fast
+
+# Convenience name for target.
+1/CMakeFiles/1_5.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/1_5.dir/rule
+.PHONY : 1/CMakeFiles/1_5.dir/rule
+
+# Convenience name for target.
+1_5: 1/CMakeFiles/1_5.dir/rule
+
+.PHONY : 1_5
+
+# fast build rule for target.
+1_5/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/1_5.dir/build.make 1/CMakeFiles/1_5.dir/build
+.PHONY : 1_5/fast
+
+# Convenience name for target.
+1/CMakeFiles/template_template.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_template.dir/rule
+.PHONY : 1/CMakeFiles/template_template.dir/rule
+
+# Convenience name for target.
+template_template: 1/CMakeFiles/template_template.dir/rule
+
+.PHONY : template_template
+
+# fast build rule for target.
+template_template/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/build
+.PHONY : template_template/fast
+
+# Convenience name for target.
+1/CMakeFiles/ptr_template.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/ptr_template.dir/rule
+.PHONY : 1/CMakeFiles/ptr_template.dir/rule
+
+# Convenience name for target.
+ptr_template: 1/CMakeFiles/ptr_template.dir/rule
+
+.PHONY : ptr_template
+
+# fast build rule for target.
+ptr_template/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/build
+.PHONY : ptr_template/fast
+
+# Convenience name for target.
+1/CMakeFiles/weak_ptr.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/weak_ptr.dir/rule
+.PHONY : 1/CMakeFiles/weak_ptr.dir/rule
+
+# Convenience name for target.
+weak_ptr: 1/CMakeFiles/weak_ptr.dir/rule
+
+.PHONY : weak_ptr
+
+# fast build rule for target.
+weak_ptr/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/weak_ptr.dir/build.make 1/CMakeFiles/weak_ptr.dir/build
+.PHONY : weak_ptr/fast
+
+# Convenience name for target.
+1/CMakeFiles/template_method.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/template_method.dir/rule
+.PHONY : 1/CMakeFiles/template_method.dir/rule
+
+# Convenience name for target.
+template_method: 1/CMakeFiles/template_method.dir/rule
+
+.PHONY : template_method
+
+# fast build rule for target.
+template_method/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_method.dir/build.make 1/CMakeFiles/template_method.dir/build
+.PHONY : template_method/fast
+
+# Convenience name for target.
+1/CMakeFiles/struct_test.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/struct_test.dir/rule
+.PHONY : 1/CMakeFiles/struct_test.dir/rule
+
+# Convenience name for target.
+struct_test: 1/CMakeFiles/struct_test.dir/rule
+
+.PHONY : struct_test
+
+# fast build rule for target.
+struct_test/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/build
+.PHONY : struct_test/fast
+
+# Convenience name for target.
+1/CMakeFiles/make_template_shared.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/make_template_shared.dir/rule
+.PHONY : 1/CMakeFiles/make_template_shared.dir/rule
+
+# Convenience name for target.
+make_template_shared: 1/CMakeFiles/make_template_shared.dir/rule
+
+.PHONY : make_template_shared
+
+# fast build rule for target.
+make_template_shared/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/make_template_shared.dir/build.make 1/CMakeFiles/make_template_shared.dir/build
+.PHONY : make_template_shared/fast
+
+# Convenience name for target.
+1/CMakeFiles/throw_test.dir/rule:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f CMakeFiles/Makefile2 1/CMakeFiles/throw_test.dir/rule
+.PHONY : 1/CMakeFiles/throw_test.dir/rule
+
+# Convenience name for target.
+throw_test: 1/CMakeFiles/throw_test.dir/rule
+
+.PHONY : throw_test
+
+# fast build rule for target.
+throw_test/fast:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/build
+.PHONY : throw_test/fast
 
 1.o: 1.cpp.o
 
@@ -491,6 +521,33 @@ ptr_template.cpp.s:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/ptr_template.dir/build.make 1/CMakeFiles/ptr_template.dir/ptr_template.cpp.s
 .PHONY : ptr_template.cpp.s
 
+struct_test.o: struct_test.cpp.o
+
+.PHONY : struct_test.o
+
+# target to build an object file
+struct_test.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/struct_test.cpp.o
+.PHONY : struct_test.cpp.o
+
+struct_test.i: struct_test.cpp.i
+
+.PHONY : struct_test.i
+
+# target to preprocess a source file
+struct_test.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/struct_test.cpp.i
+.PHONY : struct_test.cpp.i
+
+struct_test.s: struct_test.cpp.s
+
+.PHONY : struct_test.s
+
+# target to generate assembly for a file
+struct_test.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/struct_test.dir/build.make 1/CMakeFiles/struct_test.dir/struct_test.cpp.s
+.PHONY : struct_test.cpp.s
+
 template_method.o: template_method.cpp.o
 
 .PHONY : template_method.o
@@ -545,6 +602,33 @@ template_template.cpp.s:
 	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/template_template.dir/build.make 1/CMakeFiles/template_template.dir/template_template.cpp.s
 .PHONY : template_template.cpp.s
 
+throw_test.o: throw_test.cpp.o
+
+.PHONY : throw_test.o
+
+# target to build an object file
+throw_test.cpp.o:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/throw_test.cpp.o
+.PHONY : throw_test.cpp.o
+
+throw_test.i: throw_test.cpp.i
+
+.PHONY : throw_test.i
+
+# target to preprocess a source file
+throw_test.cpp.i:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/throw_test.cpp.i
+.PHONY : throw_test.cpp.i
+
+throw_test.s: throw_test.cpp.s
+
+.PHONY : throw_test.s
+
+# target to generate assembly for a file
+throw_test.cpp.s:
+	cd /home/sl33n/repo/the/build && $(MAKE) -f 1/CMakeFiles/throw_test.dir/build.make 1/CMakeFiles/throw_test.dir/throw_test.cpp.s
+.PHONY : throw_test.cpp.s
+
 weak_ptr.o: weak_ptr.cpp.o
 
 .PHONY : weak_ptr.o
@@ -580,17 +664,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... template_method"
-	@echo "... make_template_shared"
-	@echo "... weak_ptr"
-	@echo "... ptr_template"
-	@echo "... template_template"
-	@echo "... 1_5"
-	@echo "... 1_4"
-	@echo "... 1_2"
-	@echo "... 1_6"
-	@echo "... 1_3"
 	@echo "... 1"
+	@echo "... 1_3"
+	@echo "... 1_6"
+	@echo "... 1_2"
+	@echo "... 1_4"
+	@echo "... 1_5"
+	@echo "... template_template"
+	@echo "... ptr_template"
+	@echo "... weak_ptr"
+	@echo "... template_method"
+	@echo "... struct_test"
+	@echo "... make_template_shared"
+	@echo "... throw_test"
 	@echo "... 1.o"
 	@echo "... 1.i"
 	@echo "... 1.s"
@@ -615,12 +701,18 @@ help:
 	@echo "... ptr_template.o"
 	@echo "... ptr_template.i"
 	@echo "... ptr_template.s"
+	@echo "... struct_test.o"
+	@echo "... struct_test.i"
+	@echo "... struct_test.s"
 	@echo "... template_method.o"
 	@echo "... template_method.i"
 	@echo "... template_method.s"
 	@echo "... template_template.o"
 	@echo "... template_template.i"
 	@echo "... template_template.s"
+	@echo "... throw_test.o"
+	@echo "... throw_test.i"
+	@echo "... throw_test.s"
 	@echo "... weak_ptr.o"
 	@echo "... weak_ptr.i"
 	@echo "... weak_ptr.s"

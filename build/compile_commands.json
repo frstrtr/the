@@ -31,48 +31,8 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_method.dir/template_method.cpp.o -c /home/sl33n/repo/the/1/template_method.cpp",
-  "file": "/home/sl33n/repo/the/1/template_method.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o -c /home/sl33n/repo/the/1/make_template_shared.cpp",
-  "file": "/home/sl33n/repo/the/1/make_template_shared.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repo/the/1/weak_ptr.cpp",
-  "file": "/home/sl33n/repo/the/1/weak_ptr.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/ptr_template.dir/ptr_template.cpp.o -c /home/sl33n/repo/the/1/ptr_template.cpp",
-  "file": "/home/sl33n/repo/the/1/ptr_template.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repo/the/1/template_template.cpp",
-  "file": "/home/sl33n/repo/the/1/template_template.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_5.dir/1_5.cpp.o -c /home/sl33n/repo/the/1/1_5.cpp",
-  "file": "/home/sl33n/repo/the/1/1_5.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_4.dir/1_4.cpp.o -c /home/sl33n/repo/the/1/1_4.cpp",
-  "file": "/home/sl33n/repo/the/1/1_4.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_2.dir/1_2.cpp.o -c /home/sl33n/repo/the/1/1_2.cpp",
-  "file": "/home/sl33n/repo/the/1/1_2.cpp"
-},
-{
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_6.dir/1_6.cpp.o -c /home/sl33n/repo/the/1/1_6.cpp",
-  "file": "/home/sl33n/repo/the/1/1_6.cpp"
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1.dir/1.cpp.o -c /home/sl33n/repo/the/1/1.cpp",
+  "file": "/home/sl33n/repo/the/1/1.cpp"
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
@@ -81,8 +41,58 @@
 },
 {
   "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1.dir/1.cpp.o -c /home/sl33n/repo/the/1/1.cpp",
-  "file": "/home/sl33n/repo/the/1/1.cpp"
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_6.dir/1_6.cpp.o -c /home/sl33n/repo/the/1/1_6.cpp",
+  "file": "/home/sl33n/repo/the/1/1_6.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_2.dir/1_2.cpp.o -c /home/sl33n/repo/the/1/1_2.cpp",
+  "file": "/home/sl33n/repo/the/1/1_2.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_4.dir/1_4.cpp.o -c /home/sl33n/repo/the/1/1_4.cpp",
+  "file": "/home/sl33n/repo/the/1/1_4.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_5.dir/1_5.cpp.o -c /home/sl33n/repo/the/1/1_5.cpp",
+  "file": "/home/sl33n/repo/the/1/1_5.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repo/the/1/template_template.cpp",
+  "file": "/home/sl33n/repo/the/1/template_template.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/ptr_template.dir/ptr_template.cpp.o -c /home/sl33n/repo/the/1/ptr_template.cpp",
+  "file": "/home/sl33n/repo/the/1/ptr_template.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repo/the/1/weak_ptr.cpp",
+  "file": "/home/sl33n/repo/the/1/weak_ptr.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_method.dir/template_method.cpp.o -c /home/sl33n/repo/the/1/template_method.cpp",
+  "file": "/home/sl33n/repo/the/1/template_method.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/struct_test.dir/struct_test.cpp.o -c /home/sl33n/repo/the/1/struct_test.cpp",
+  "file": "/home/sl33n/repo/the/1/struct_test.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o -c /home/sl33n/repo/the/1/make_template_shared.cpp",
+  "file": "/home/sl33n/repo/the/1/make_template_shared.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/throw_test.dir/throw_test.cpp.o -c /home/sl33n/repo/the/1/throw_test.cpp",
+  "file": "/home/sl33n/repo/the/1/throw_test.cpp"
 },
 {
   "directory": "/home/sl33n/repo/the/build/filesystem",
@@ -103,5 +113,15 @@
   "directory": "/home/sl33n/repo/the/build/2",
   "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/2_1.dir/2_1.cpp.o -c /home/sl33n/repo/the/2/2_1.cpp",
   "file": "/home/sl33n/repo/the/2/2_1.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/sof",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1_test1.dir/sof_1_test1.cpp.o -c /home/sl33n/repo/the/sof/sof_1_test1.cpp",
+  "file": "/home/sl33n/repo/the/sof/sof_1_test1.cpp"
+},
+{
+  "directory": "/home/sl33n/repo/the/build/sof",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1.dir/sof_1.cpp.o -c /home/sl33n/repo/the/sof/sof_1.cpp",
+  "file": "/home/sl33n/repo/the/sof/sof_1.cpp"
 }
 ]

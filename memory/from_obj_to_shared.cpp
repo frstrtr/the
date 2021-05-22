@@ -3,13 +3,13 @@
 
 using namespace std;
 
-class A
-{
-public:
-    int i;
-    A(const A&) = delete;
-    A(int _i) : i(_i) {}
-};
+// class A
+// {
+// public:
+//     int i;
+//     A(const A&) = delete;
+//     A(int _i) : i(_i) {}
+// };
 
 int main()
 {
