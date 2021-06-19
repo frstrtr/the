@@ -1,127 +1,137 @@
 [
 {
-  "directory": "/home/sl33n/repo/the/build/par_deriv",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/shared_this_parent_derived.dir/shared_this_parent_derived.cpp.o -c /home/sl33n/repo/the/par_deriv/shared_this_parent_derived.cpp",
-  "file": "/home/sl33n/repo/the/par_deriv/shared_this_parent_derived.cpp"
+  "directory": "/home/sl33n/repository/the/build/par_deriv",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/shared_this_parent_derived.dir/shared_this_parent_derived.cpp.o -c /home/sl33n/repository/the/par_deriv/shared_this_parent_derived.cpp",
+  "file": "/home/sl33n/repository/the/par_deriv/shared_this_parent_derived.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/memory",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/boost_function.dir/boost_function.cpp.o -c /home/sl33n/repo/the/memory/boost_function.cpp",
-  "file": "/home/sl33n/repo/the/memory/boost_function.cpp"
+  "directory": "/home/sl33n/repository/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/boost_function.dir/boost_function.cpp.o -c /home/sl33n/repository/the/memory/boost_function.cpp",
+  "file": "/home/sl33n/repository/the/memory/boost_function.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/memory",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/any_args.dir/any_args.cpp.o -c /home/sl33n/repo/the/memory/any_args.cpp",
-  "file": "/home/sl33n/repo/the/memory/any_args.cpp"
+  "directory": "/home/sl33n/repository/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/any_args.dir/any_args.cpp.o -c /home/sl33n/repository/the/memory/any_args.cpp",
+  "file": "/home/sl33n/repository/the/memory/any_args.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/memory",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/data_convert.dir/data_convert.cpp.o -c /home/sl33n/repo/the/memory/data_convert.cpp",
-  "file": "/home/sl33n/repo/the/memory/data_convert.cpp"
+  "directory": "/home/sl33n/repository/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/data_convert.dir/data_convert.cpp.o -c /home/sl33n/repository/the/memory/data_convert.cpp",
+  "file": "/home/sl33n/repository/the/memory/data_convert.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/memory",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.o -c /home/sl33n/repo/the/memory/from_obj_to_shared.cpp",
-  "file": "/home/sl33n/repo/the/memory/from_obj_to_shared.cpp"
+  "directory": "/home/sl33n/repository/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/from_obj_to_shared.dir/from_obj_to_shared.cpp.o -c /home/sl33n/repository/the/memory/from_obj_to_shared.cpp",
+  "file": "/home/sl33n/repository/the/memory/from_obj_to_shared.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/memory",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/memory_array.dir/memory_array.cpp.o -c /home/sl33n/repo/the/memory/memory_array.cpp",
-  "file": "/home/sl33n/repo/the/memory/memory_array.cpp"
+  "directory": "/home/sl33n/repository/the/build/memory",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/memory_array.dir/memory_array.cpp.o -c /home/sl33n/repository/the/memory/memory_array.cpp",
+  "file": "/home/sl33n/repository/the/memory/memory_array.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1.dir/1.cpp.o -c /home/sl33n/repo/the/1/1.cpp",
-  "file": "/home/sl33n/repo/the/1/1.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1.dir/1.cpp.o -c /home/sl33n/repository/the/1/1.cpp",
+  "file": "/home/sl33n/repository/the/1/1.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_3.dir/1_3.cpp.o -c /home/sl33n/repo/the/1/1_3.cpp",
-  "file": "/home/sl33n/repo/the/1/1_3.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_3.dir/1_3.cpp.o -c /home/sl33n/repository/the/1/1_3.cpp",
+  "file": "/home/sl33n/repository/the/1/1_3.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_6.dir/1_6.cpp.o -c /home/sl33n/repo/the/1/1_6.cpp",
-  "file": "/home/sl33n/repo/the/1/1_6.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_6.dir/1_6.cpp.o -c /home/sl33n/repository/the/1/1_6.cpp",
+  "file": "/home/sl33n/repository/the/1/1_6.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_2.dir/1_2.cpp.o -c /home/sl33n/repo/the/1/1_2.cpp",
-  "file": "/home/sl33n/repo/the/1/1_2.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_2.dir/1_2.cpp.o -c /home/sl33n/repository/the/1/1_2.cpp",
+  "file": "/home/sl33n/repository/the/1/1_2.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_4.dir/1_4.cpp.o -c /home/sl33n/repo/the/1/1_4.cpp",
-  "file": "/home/sl33n/repo/the/1/1_4.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_4.dir/1_4.cpp.o -c /home/sl33n/repository/the/1/1_4.cpp",
+  "file": "/home/sl33n/repository/the/1/1_4.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_5.dir/1_5.cpp.o -c /home/sl33n/repo/the/1/1_5.cpp",
-  "file": "/home/sl33n/repo/the/1/1_5.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/1_5.dir/1_5.cpp.o -c /home/sl33n/repository/the/1/1_5.cpp",
+  "file": "/home/sl33n/repository/the/1/1_5.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repo/the/1/template_template.cpp",
-  "file": "/home/sl33n/repo/the/1/template_template.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_template.dir/template_template.cpp.o -c /home/sl33n/repository/the/1/template_template.cpp",
+  "file": "/home/sl33n/repository/the/1/template_template.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/ptr_template.dir/ptr_template.cpp.o -c /home/sl33n/repo/the/1/ptr_template.cpp",
-  "file": "/home/sl33n/repo/the/1/ptr_template.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/ptr_template.dir/ptr_template.cpp.o -c /home/sl33n/repository/the/1/ptr_template.cpp",
+  "file": "/home/sl33n/repository/the/1/ptr_template.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repo/the/1/weak_ptr.cpp",
-  "file": "/home/sl33n/repo/the/1/weak_ptr.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/weak_ptr.dir/weak_ptr.cpp.o -c /home/sl33n/repository/the/1/weak_ptr.cpp",
+  "file": "/home/sl33n/repository/the/1/weak_ptr.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_method.dir/template_method.cpp.o -c /home/sl33n/repo/the/1/template_method.cpp",
-  "file": "/home/sl33n/repo/the/1/template_method.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/template_method.dir/template_method.cpp.o -c /home/sl33n/repository/the/1/template_method.cpp",
+  "file": "/home/sl33n/repository/the/1/template_method.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/struct_test.dir/struct_test.cpp.o -c /home/sl33n/repo/the/1/struct_test.cpp",
-  "file": "/home/sl33n/repo/the/1/struct_test.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/struct_test.dir/struct_test.cpp.o -c /home/sl33n/repository/the/1/struct_test.cpp",
+  "file": "/home/sl33n/repository/the/1/struct_test.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o -c /home/sl33n/repo/the/1/make_template_shared.cpp",
-  "file": "/home/sl33n/repo/the/1/make_template_shared.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/make_template_shared.dir/make_template_shared.cpp.o -c /home/sl33n/repository/the/1/make_template_shared.cpp",
+  "file": "/home/sl33n/repository/the/1/make_template_shared.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/1",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/throw_test.dir/throw_test.cpp.o -c /home/sl33n/repo/the/1/throw_test.cpp",
-  "file": "/home/sl33n/repo/the/1/throw_test.cpp"
+  "directory": "/home/sl33n/repository/the/build/1",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/throw_test.dir/throw_test.cpp.o -c /home/sl33n/repository/the/1/throw_test.cpp",
+  "file": "/home/sl33n/repository/the/1/throw_test.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/filesystem",
-  "command": "/bin/g++-8  -DBOOST_ALL_NO_LIB  -g   -std=gnu++2a -o CMakeFiles/fs1.dir/1.cpp.o -c /home/sl33n/repo/the/filesystem/1.cpp",
-  "file": "/home/sl33n/repo/the/filesystem/1.cpp"
+  "directory": "/home/sl33n/repository/the/build/filesystem",
+  "command": "/bin/g++-8  -DBOOST_ALL_NO_LIB  -g   -std=gnu++2a -o CMakeFiles/fs1.dir/1.cpp.o -c /home/sl33n/repository/the/filesystem/1.cpp",
+  "file": "/home/sl33n/repository/the/filesystem/1.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/boost_tests",
-  "command": "/bin/g++-8  -DBOOST_ALL_NO_LIB  -g   -std=gnu++2a -o CMakeFiles/po_enum.dir/po_enum.cpp.o -c /home/sl33n/repo/the/boost_tests/po_enum.cpp",
-  "file": "/home/sl33n/repo/the/boost_tests/po_enum.cpp"
+  "directory": "/home/sl33n/repository/the/build/boost_tests",
+  "command": "/bin/g++-8  -DBOOST_ALL_NO_LIB  -g   -std=gnu++2a -o CMakeFiles/po_enum.dir/po_enum.cpp.o -c /home/sl33n/repository/the/boost_tests/po_enum.cpp",
+  "file": "/home/sl33n/repository/the/boost_tests/po_enum.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/curl",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/curl1.dir/curl1.cpp.o -c /home/sl33n/repo/the/curl/curl1.cpp",
-  "file": "/home/sl33n/repo/the/curl/curl1.cpp"
+  "directory": "/home/sl33n/repository/the/build/curl",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/curl1.dir/curl1.cpp.o -c /home/sl33n/repository/the/curl/curl1.cpp",
+  "file": "/home/sl33n/repository/the/curl/curl1.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/2",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/2_1.dir/2_1.cpp.o -c /home/sl33n/repo/the/2/2_1.cpp",
-  "file": "/home/sl33n/repo/the/2/2_1.cpp"
+  "directory": "/home/sl33n/repository/the/build/2",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/2_4.dir/2_4.cpp.o -c /home/sl33n/repository/the/2/2_4.cpp",
+  "file": "/home/sl33n/repository/the/2/2_4.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/sof",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1_test1.dir/sof_1_test1.cpp.o -c /home/sl33n/repo/the/sof/sof_1_test1.cpp",
-  "file": "/home/sl33n/repo/the/sof/sof_1_test1.cpp"
+  "directory": "/home/sl33n/repository/the/build/2",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/2_3.dir/2_3.cpp.o -c /home/sl33n/repository/the/2/2_3.cpp",
+  "file": "/home/sl33n/repository/the/2/2_3.cpp"
 },
 {
-  "directory": "/home/sl33n/repo/the/build/sof",
-  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1.dir/sof_1.cpp.o -c /home/sl33n/repo/the/sof/sof_1.cpp",
-  "file": "/home/sl33n/repo/the/sof/sof_1.cpp"
+  "directory": "/home/sl33n/repository/the/build/2",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/2_1.dir/2_1.cpp.o -c /home/sl33n/repository/the/2/2_1.cpp",
+  "file": "/home/sl33n/repository/the/2/2_1.cpp"
+},
+{
+  "directory": "/home/sl33n/repository/the/build/sof",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1_test1.dir/sof_1_test1.cpp.o -c /home/sl33n/repository/the/sof/sof_1_test1.cpp",
+  "file": "/home/sl33n/repository/the/sof/sof_1_test1.cpp"
+},
+{
+  "directory": "/home/sl33n/repository/the/build/sof",
+  "command": "/bin/g++-8    -g   -std=gnu++2a -o CMakeFiles/sof_1.dir/sof_1.cpp.o -c /home/sl33n/repository/the/sof/sof_1.cpp",
+  "file": "/home/sl33n/repository/the/sof/sof_1.cpp"
 }
 ]

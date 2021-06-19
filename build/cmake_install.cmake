@@ -1,4 +1,4 @@
-# Install script for directory: /home/sl33n/repo/the
+# Install script for directory: /home/sl33n/repository/the
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,42 +39,42 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/par_deriv/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/par_deriv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/memory/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/memory/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/1/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/1/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/filesystem/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/filesystem/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/boost_tests/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/boost_tests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/curl/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/curl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/2/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sl33n/repo/the/build/sof/cmake_install.cmake")
+  include("/home/sl33n/repository/the/build/sof/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -85,5 +85,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sl33n/repo/the/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sl33n/repository/the/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

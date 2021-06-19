@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sl33n/repo/the
+CMAKE_SOURCE_DIR = /home/sl33n/repository/the
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sl33n/repo/the/build
+CMAKE_BINARY_DIR = /home/sl33n/repository/the/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles /home/sl33n/repo/the/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles /home/sl33n/repository/the/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repo/the/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sl33n/repository/the/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -397,6 +397,32 @@ curl1/fast:
 .PHONY : curl1/fast
 
 #=============================================================================
+# Target rules for targets named 2_4
+
+# Build rule for target.
+2_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_4
+.PHONY : 2_4
+
+# fast build rule for target.
+2_4/fast:
+	$(MAKE) -f 2/CMakeFiles/2_4.dir/build.make 2/CMakeFiles/2_4.dir/build
+.PHONY : 2_4/fast
+
+#=============================================================================
+# Target rules for targets named 2_3
+
+# Build rule for target.
+2_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_3
+.PHONY : 2_3
+
+# fast build rule for target.
+2_3/fast:
+	$(MAKE) -f 2/CMakeFiles/2_3.dir/build.make 2/CMakeFiles/2_3.dir/build
+.PHONY : 2_3/fast
+
+#=============================================================================
 # Target rules for targets named 2_1
 
 # Build rule for target.
@@ -465,6 +491,8 @@ help:
 	@echo "... fs1"
 	@echo "... po_enum"
 	@echo "... curl1"
+	@echo "... 2_4"
+	@echo "... 2_3"
 	@echo "... 2_1"
 	@echo "... sof_1_test1"
 	@echo "... sof_1"
