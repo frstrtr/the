@@ -36,6 +36,9 @@
 /home/sl33n/repository/the/build/curl/CMakeFiles/curl1.dir
 /home/sl33n/repository/the/build/2/CMakeFiles/rebuild_cache.dir
 /home/sl33n/repository/the/build/2/CMakeFiles/edit_cache.dir
+/home/sl33n/repository/the/build/2/CMakeFiles/2_7.dir
+/home/sl33n/repository/the/build/2/CMakeFiles/2_5.dir
+/home/sl33n/repository/the/build/2/CMakeFiles/2_6.dir
 /home/sl33n/repository/the/build/2/CMakeFiles/2_4.dir
 /home/sl33n/repository/the/build/2/CMakeFiles/2_3.dir
 /home/sl33n/repository/the/build/2/CMakeFiles/2_1.dir

@@ -397,6 +397,45 @@ curl1/fast:
 .PHONY : curl1/fast
 
 #=============================================================================
+# Target rules for targets named 2_7
+
+# Build rule for target.
+2_7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_7
+.PHONY : 2_7
+
+# fast build rule for target.
+2_7/fast:
+	$(MAKE) -f 2/CMakeFiles/2_7.dir/build.make 2/CMakeFiles/2_7.dir/build
+.PHONY : 2_7/fast
+
+#=============================================================================
+# Target rules for targets named 2_5
+
+# Build rule for target.
+2_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_5
+.PHONY : 2_5
+
+# fast build rule for target.
+2_5/fast:
+	$(MAKE) -f 2/CMakeFiles/2_5.dir/build.make 2/CMakeFiles/2_5.dir/build
+.PHONY : 2_5/fast
+
+#=============================================================================
+# Target rules for targets named 2_6
+
+# Build rule for target.
+2_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_6
+.PHONY : 2_6
+
+# fast build rule for target.
+2_6/fast:
+	$(MAKE) -f 2/CMakeFiles/2_6.dir/build.make 2/CMakeFiles/2_6.dir/build
+.PHONY : 2_6/fast
+
+#=============================================================================
 # Target rules for targets named 2_4
 
 # Build rule for target.
@@ -491,6 +530,9 @@ help:
 	@echo "... fs1"
 	@echo "... po_enum"
 	@echo "... curl1"
+	@echo "... 2_7"
+	@echo "... 2_5"
+	@echo "... 2_6"
 	@echo "... 2_4"
 	@echo "... 2_3"
 	@echo "... 2_1"
