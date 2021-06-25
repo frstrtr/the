@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../curl/CMakeLists.txt"
   "../filesystem/CMakeLists.txt"
   "../memory/CMakeLists.txt"
+  "../new_prefsum/CMakeLists.txt"
   "../par_deriv/CMakeLists.txt"
   "../sof/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake"
@@ -112,6 +113,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "curl/CMakeFiles/CMakeDirectoryInformation.cmake"
   "2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "sof/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "new_prefsum/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -138,7 +140,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "filesystem/CMakeFiles/fs1.dir/DependInfo.cmake"
   "boost_tests/CMakeFiles/po_enum.dir/DependInfo.cmake"
   "curl/CMakeFiles/curl1.dir/DependInfo.cmake"
-  "2/CMakeFiles/2_7.dir/DependInfo.cmake"
+  "2/CMakeFiles/generator_test2.dir/DependInfo.cmake"
+  "2/CMakeFiles/generator_test.dir/DependInfo.cmake"
   "2/CMakeFiles/2_5.dir/DependInfo.cmake"
   "2/CMakeFiles/2_6.dir/DependInfo.cmake"
   "2/CMakeFiles/2_4.dir/DependInfo.cmake"
@@ -146,4 +149,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "2/CMakeFiles/2_1.dir/DependInfo.cmake"
   "sof/CMakeFiles/sof_1_test1.dir/DependInfo.cmake"
   "sof/CMakeFiles/sof_1.dir/DependInfo.cmake"
+  "new_prefsum/CMakeFiles/share_prefsum_test.dir/DependInfo.cmake"
   )

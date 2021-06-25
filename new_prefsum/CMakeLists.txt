@@ -1,0 +1,1 @@
+add_executable(share_prefsum_test share_prefsum_test.cpp share.h element_type.h element_type.cpp)

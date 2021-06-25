@@ -397,17 +397,30 @@ curl1/fast:
 .PHONY : curl1/fast
 
 #=============================================================================
-# Target rules for targets named 2_7
+# Target rules for targets named generator_test2
 
 # Build rule for target.
-2_7: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2_7
-.PHONY : 2_7
+generator_test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generator_test2
+.PHONY : generator_test2
 
 # fast build rule for target.
-2_7/fast:
-	$(MAKE) -f 2/CMakeFiles/2_7.dir/build.make 2/CMakeFiles/2_7.dir/build
-.PHONY : 2_7/fast
+generator_test2/fast:
+	$(MAKE) -f 2/CMakeFiles/generator_test2.dir/build.make 2/CMakeFiles/generator_test2.dir/build
+.PHONY : generator_test2/fast
+
+#=============================================================================
+# Target rules for targets named generator_test
+
+# Build rule for target.
+generator_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generator_test
+.PHONY : generator_test
+
+# fast build rule for target.
+generator_test/fast:
+	$(MAKE) -f 2/CMakeFiles/generator_test.dir/build.make 2/CMakeFiles/generator_test.dir/build
+.PHONY : generator_test/fast
 
 #=============================================================================
 # Target rules for targets named 2_5
@@ -500,6 +513,19 @@ sof_1/fast:
 	$(MAKE) -f sof/CMakeFiles/sof_1.dir/build.make sof/CMakeFiles/sof_1.dir/build
 .PHONY : sof_1/fast
 
+#=============================================================================
+# Target rules for targets named share_prefsum_test
+
+# Build rule for target.
+share_prefsum_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 share_prefsum_test
+.PHONY : share_prefsum_test
+
+# fast build rule for target.
+share_prefsum_test/fast:
+	$(MAKE) -f new_prefsum/CMakeFiles/share_prefsum_test.dir/build.make new_prefsum/CMakeFiles/share_prefsum_test.dir/build
+.PHONY : share_prefsum_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -530,7 +556,8 @@ help:
 	@echo "... fs1"
 	@echo "... po_enum"
 	@echo "... curl1"
-	@echo "... 2_7"
+	@echo "... generator_test2"
+	@echo "... generator_test"
 	@echo "... 2_5"
 	@echo "... 2_6"
 	@echo "... 2_4"
@@ -538,6 +565,7 @@ help:
 	@echo "... 2_1"
 	@echo "... sof_1_test1"
 	@echo "... sof_1"
+	@echo "... share_prefsum_test"
 .PHONY : help
 
 
