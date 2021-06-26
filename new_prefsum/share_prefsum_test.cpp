@@ -6,6 +6,7 @@
 #include <queue>
 #include "share.h"
 #include <chrono>
+#include <thread>
 #include "element_type.h"
 using namespace std;
 
@@ -70,6 +71,8 @@ public:
         {
             for (auto item : cur_it_nexts)
             {
+                item->second.prev = remover.prev;
+                item->second.
                 q.push(item);
             }
             auto new_it = get_q();
@@ -115,6 +118,36 @@ public:
         element_delta_type fir(sum[first_hash]);
         element_delta_type sec(sum[second_hash]);
         return fir - sec;
+    }
+
+    int get_last(int hash)
+    {
+        auto _it = sum.find(hash);
+        if (_it == sum.end())
+        {
+            throw invalid_argument("[get_last] hash not exists in sum");
+        }
+        cout << _it->second.element;
+        auto last = _it->second.prev_hash();
+        while (_it != sum.end())
+        {
+            _it = _it->second.prev;
+            last = _it->second.prev_hash();
+            // this_thread::sleep_for(chrono::milliseconds(1));
+        }
+        return last;
+    }
+
+    element_delta_type get_delta_to_last(int hash)
+    {
+        auto el = sum.find(hash);
+        if (el == sum.end())
+        {
+            throw invalid_argument("[get_delta_to_last] hash not exists in sum");
+        }
+        element_delta_type delta(el->second);
+        delta.tail = get_last(hash);
+        return delta;
     }
 
     //todo: remove range
@@ -177,6 +210,29 @@ int main()
         share *item = new share(i, i - 1, i * 10);
         tracker.add(item);
     }
+    t2 = std::chrono::high_resolution_clock::now();
+    std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
+    cout << "                   ...finish!" << endl;
+
+    //going from best to last
+    cout << "Starting going for 1000 shares..." << endl;
+    t1 = std::chrono::high_resolution_clock::now();
+    auto it_going1000 = tracker.sum[999].prev;
+    while (it_going1000 != tracker.sum.end())
+    {
+        cout << it_going1000->second.hash() << " ";
+        it_going1000 = it_going1000->second.prev;
+        // this_thread::sleep_for(chrono::milliseconds(1));
+    }
+    t2 = std::chrono::high_resolution_clock::now();
+    std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
+    cout << "                   ...finish!" << endl;
+
+    //Get delta_last for 999
+    cout << "Get delta_last for 999\n";
+    t1 = std::chrono::high_resolution_clock::now();
+    auto delta_last999 = tracker.get_delta_to_last(5);
+    cout << delta_last999.head << " " << delta_last999.tail << " " << delta_last999.height << " " << delta_last999.work << endl;
     t2 = std::chrono::high_resolution_clock::now();
     std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
     cout << "                   ...finish!" << endl;

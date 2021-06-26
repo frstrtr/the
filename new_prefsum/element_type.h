@@ -34,6 +34,10 @@ public:
     }
     int prev_hash()
     {
+        if (element == nullptr){
+            cout << prev->second.hash() << endl;
+            return 0;
+        }
         return element->prev_hash;
     }
 
