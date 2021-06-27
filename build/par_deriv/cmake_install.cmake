@@ -1,4 +1,4 @@
-# Install script for directory: /home/sl33n/repo/the/par_deriv
+# Install script for directory: /home/sl33n/repository/the/par_deriv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

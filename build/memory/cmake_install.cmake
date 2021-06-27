@@ -1,4 +1,4 @@
-# Install script for directory: /home/sl33n/repo/the/memory
+# Install script for directory: /home/sl33n/repository/the/memory
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

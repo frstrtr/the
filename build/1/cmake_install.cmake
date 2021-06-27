@@ -1,4 +1,4 @@
-# Install script for directory: /home/sl33n/repo/the/1
+# Install script for directory: /home/sl33n/repository/the/1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

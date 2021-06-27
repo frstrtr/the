@@ -72,7 +72,6 @@ public:
             for (auto item : cur_it_nexts)
             {
                 item->second.prev = remover.prev;
-                item->second.
                 q.push(item);
             }
             auto new_it = get_q();
@@ -156,7 +155,14 @@ public:
 #define get_delta_time(t1, t2) \
     float(std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count()) / 1000000 << " seconds."
 
-int main()
+#define start_timer() \
+    t1 = std::chrono::high_resolution_clock::now()
+
+#define end_timer(text)                             \
+    t2 = std::chrono::high_resolution_clock::now(); \
+    std::cout << text << " time: " << get_delta_time(t1, t2) << endl
+
+void first_test()
 {
     //vector of pointers for shares
     vector<share *> shares;
@@ -247,4 +253,50 @@ int main()
     t2 = std::chrono::high_resolution_clock::now();
     std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
     cout << "                   ...finish!" << endl;
+}
+
+void second_test()
+{
+    //vector of pointers for shares
+    vector<share *> shares;
+    for (int i = 1; i < 10; i++)
+    {
+        shares.push_back(new share(i, i - 1, i * 10));
+    }
+
+    std::chrono::_V2::system_clock::time_point t1;
+    std::chrono::_V2::system_clock::time_point t2;
+
+    //init tracker
+    start_timer();
+    prefsum tracker;
+    for (auto item : shares)
+    {
+        tracker.add(item);
+    }
+    end_timer("Adding in tracker");
+
+    //remove test
+    start_timer();
+    tracker.remove(7);
+    cout << "removed 7" << endl;
+    auto delta = tracker.get_delta(9, 4);
+    cout << "get_delta(9, 4): " << delta.height << " " << delta.work << endl;
+    end_timer("Removing element 7 and get_delta(9,4)");
+
+    //test curent chain
+    {
+        auto _it = tracker.sum.find(9);
+        while (_it != tracker.sum.end()){
+            cout << _it->second.hash() << ":" << _it->second.prev_hash() << " ";
+            _it = _it->second.prev;
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    //first_test();
+    second_test();
 }
