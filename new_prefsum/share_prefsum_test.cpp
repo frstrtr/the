@@ -71,7 +71,7 @@ public:
         {
             for (auto item : cur_it_nexts)
             {
-                item->second.prev = remover.prev;
+                item->second.prev = sum.end();//remover.prev;
                 q.push(item);
             }
             auto new_it = get_q();
@@ -126,12 +126,12 @@ public:
         {
             throw invalid_argument("[get_last] hash not exists in sum");
         }
-        cout << _it->second.element;
+        //cout << _it->second.element;
         auto last = _it->second.prev_hash();
         while (_it != sum.end())
         {
-            _it = _it->second.prev;
             last = _it->second.prev_hash();
+            _it = _it->second.prev;
             // this_thread::sleep_for(chrono::milliseconds(1));
         }
         return last;
@@ -149,6 +149,21 @@ public:
         return delta;
     }
 
+    int get_test_best()
+    {
+        if (items.empty())
+        {
+            return 0;
+        }
+        auto best = items.begin()->second->hash;
+        for (auto item : items)
+        {
+            if (item.second->hash > best)
+                best = item.second->hash;
+        }
+        return best;
+    }
+
     //todo: remove range
 };
 
@@ -161,6 +176,17 @@ public:
 #define end_timer(text)                             \
     t2 = std::chrono::high_resolution_clock::now(); \
     std::cout << text << " time: " << get_delta_time(t1, t2) << endl
+
+#define write_chain(best)                                                        \
+    {                                                                            \
+        auto _it = tracker.sum.find(best);                                       \
+        while (_it != tracker.sum.end())                                         \
+        {                                                                        \
+            cout << _it->second.hash() << ":" << _it->second.prev_hash() << " "; \
+            _it = _it->second.prev;                                              \
+        }                                                                        \
+        cout << endl;                                                            \
+    }
 
 void first_test()
 {
@@ -237,7 +263,7 @@ void first_test()
     //Get delta_last for 999
     cout << "Get delta_last for 999\n";
     t1 = std::chrono::high_resolution_clock::now();
-    auto delta_last999 = tracker.get_delta_to_last(5);
+    auto delta_last999 = tracker.get_delta_to_last(999);
     cout << delta_last999.head << " " << delta_last999.tail << " " << delta_last999.height << " " << delta_last999.work << endl;
     t2 = std::chrono::high_resolution_clock::now();
     std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
@@ -285,18 +311,14 @@ void second_test()
     end_timer("Removing element 7 and get_delta(9,4)");
 
     //test curent chain
-    {
-        auto _it = tracker.sum.find(9);
-        while (_it != tracker.sum.end()){
-            cout << _it->second.hash() << ":" << _it->second.prev_hash() << " ";
-            _it = _it->second.prev;
-        }
-        cout << endl;
-    }
+    write_chain(tracker.get_test_best());
+
+    auto delta_last9 = tracker.get_delta_to_last(tracker.get_test_best());
+    cout << "delta_last9 = " << delta_last9.head << " " << delta_last9.tail << " " << delta_last9.height << " " << delta_last9.work << endl;
 }
 
 int main()
 {
-    //first_test();
-    second_test();
+    first_test();
+    //second_test();
 }
