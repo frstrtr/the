@@ -34,7 +34,8 @@ public:
     }
     int prev_hash()
     {
-        if (element == nullptr){
+        if (element == nullptr)
+        {
             cout << prev->second.hash() << endl;
             return 0;
         }
@@ -52,8 +53,8 @@ public:
     element_type operator-(const element_type &element)
     {
         element_type res = *this;
-        res.work -= element.element->work;
-        res.height -= 1;
+        res.work -= element.work;
+        res.height -= element.height;
         return res;
     }
 
@@ -66,8 +67,8 @@ public:
 
     element_type operator-=(const element_type &element)
     {
-        this->work -= element.element->work;
-        this->height -= 1;
+        this->work -= element.work;
+        this->height -= element.height;
         return *this;
     }
 
@@ -76,14 +77,18 @@ public:
 
 class element_delta_type
 {
+private:
+    bool _none;
+
 public:
     int head;
     int tail;
     int32_t height;
     int32_t work;
 
-    element_delta_type()
+    element_delta_type(bool none = true)
     {
+        _none = none;
     }
 
     element_delta_type(element_type &el)
@@ -108,5 +113,15 @@ public:
         tail = el.head;
         height -= el.height;
         work -= el.work;
+    }
+
+    bool is_none()
+    {
+        return _none;
+    }
+
+    void set_none(bool none = true)
+    {
+        _none = none;
     }
 };

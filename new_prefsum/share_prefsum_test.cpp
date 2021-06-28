@@ -71,7 +71,7 @@ public:
         {
             for (auto item : cur_it_nexts)
             {
-                item->second.prev = sum.end();//remover.prev;
+                item->second.prev = sum.end(); //remover.prev;
                 q.push(item);
             }
             auto new_it = get_q();
@@ -103,6 +103,23 @@ public:
 #undef set_cur_it
 #undef get_q
 
+    bool is_child_of(int item_hash, int possible_child_hash)
+    {
+        auto _it = sum.find(item_hash);
+        if (sum.find(possible_child_hash) == sum.end())
+        {
+            throw invalid_argument("is_child_of: possible_child_hash existn't in tracker");
+        }
+        while (_it != sum.end())
+        {
+            if (_it->second.prev->first == possible_child_hash)
+                return true;
+            else
+                _it = _it->second.prev;
+        }
+        return false;
+    }
+
     element_delta_type get_delta(int first_hash, int second_hash)
     {
         if (sum.find(first_hash) == sum.end())
@@ -114,11 +131,18 @@ public:
             throw invalid_argument("second in get_delta existn't in sum!");
         }
 
+        if (!is_child_of(first_hash, second_hash))
+        {
+            throw invalid_argument("get_delta: second_hash is not child for first_hash!");
+            //return element_delta_type();
+        }
+
         element_delta_type fir(sum[first_hash]);
         element_delta_type sec(sum[second_hash]);
         return fir - sec;
     }
 
+    //todo: create optimization like get_last_iterator
     int get_last(int hash)
     {
         auto _it = sum.find(hash);
@@ -269,6 +293,9 @@ void first_test()
     std::cout << "time delay = " << get_delta_time(t1, t2) << endl;
     cout << "                   ...finish!" << endl;
 
+    cout << "tracker size: " << tracker.items.size() << endl;
+    write_chain(tracker.get_test_best());
+
     //removed 900 shares in tracker
     cout << "Starting removing 900 shares..." << endl;
     t1 = std::chrono::high_resolution_clock::now();
@@ -306,12 +333,22 @@ void second_test()
     start_timer();
     tracker.remove(7);
     cout << "removed 7" << endl;
-    auto delta = tracker.get_delta(9, 4);
-    cout << "get_delta(9, 4): " << delta.height << " " << delta.work << endl;
+    try
+    {
+        auto delta = tracker.get_delta(9, 4);
+        cout << "get_delta(9, 4): " << delta.height << " " << delta.work << endl;
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "[error]" << e.what() << '\n';
+        auto delta = tracker.get_delta(9, tracker.get_last(9)+1);
+        cout << "get_delta(9, 4): " << delta.height << " " << delta.work << endl;
+    }
     end_timer("Removing element 7 and get_delta(9,4)");
 
     //test curent chain
     write_chain(tracker.get_test_best());
+    write_chain(5);
 
     auto delta_last9 = tracker.get_delta_to_last(tracker.get_test_best());
     cout << "delta_last9 = " << delta_last9.head << " " << delta_last9.tail << " " << delta_last9.height << " " << delta_last9.work << endl;
@@ -319,6 +356,6 @@ void second_test()
 
 int main()
 {
-    first_test();
-    //second_test();
+    //first_test();
+    second_test();
 }
