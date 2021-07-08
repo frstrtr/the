@@ -397,71 +397,6 @@ curl1/fast:
 .PHONY : curl1/fast
 
 #=============================================================================
-# Target rules for targets named generator_test2
-
-# Build rule for target.
-generator_test2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 generator_test2
-.PHONY : generator_test2
-
-# fast build rule for target.
-generator_test2/fast:
-	$(MAKE) -f 2/CMakeFiles/generator_test2.dir/build.make 2/CMakeFiles/generator_test2.dir/build
-.PHONY : generator_test2/fast
-
-#=============================================================================
-# Target rules for targets named generator_test
-
-# Build rule for target.
-generator_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 generator_test
-.PHONY : generator_test
-
-# fast build rule for target.
-generator_test/fast:
-	$(MAKE) -f 2/CMakeFiles/generator_test.dir/build.make 2/CMakeFiles/generator_test.dir/build
-.PHONY : generator_test/fast
-
-#=============================================================================
-# Target rules for targets named 2_5
-
-# Build rule for target.
-2_5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2_5
-.PHONY : 2_5
-
-# fast build rule for target.
-2_5/fast:
-	$(MAKE) -f 2/CMakeFiles/2_5.dir/build.make 2/CMakeFiles/2_5.dir/build
-.PHONY : 2_5/fast
-
-#=============================================================================
-# Target rules for targets named 2_6
-
-# Build rule for target.
-2_6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2_6
-.PHONY : 2_6
-
-# fast build rule for target.
-2_6/fast:
-	$(MAKE) -f 2/CMakeFiles/2_6.dir/build.make 2/CMakeFiles/2_6.dir/build
-.PHONY : 2_6/fast
-
-#=============================================================================
-# Target rules for targets named 2_4
-
-# Build rule for target.
-2_4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2_4
-.PHONY : 2_4
-
-# fast build rule for target.
-2_4/fast:
-	$(MAKE) -f 2/CMakeFiles/2_4.dir/build.make 2/CMakeFiles/2_4.dir/build
-.PHONY : 2_4/fast
-
-#=============================================================================
 # Target rules for targets named 2_3
 
 # Build rule for target.
@@ -486,6 +421,136 @@ generator_test/fast:
 2_1/fast:
 	$(MAKE) -f 2/CMakeFiles/2_1.dir/build.make 2/CMakeFiles/2_1.dir/build
 .PHONY : 2_1/fast
+
+#=============================================================================
+# Target rules for targets named 2_4
+
+# Build rule for target.
+2_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_4
+.PHONY : 2_4
+
+# fast build rule for target.
+2_4/fast:
+	$(MAKE) -f 2/CMakeFiles/2_4.dir/build.make 2/CMakeFiles/2_4.dir/build
+.PHONY : 2_4/fast
+
+#=============================================================================
+# Target rules for targets named 2_6
+
+# Build rule for target.
+2_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_6
+.PHONY : 2_6
+
+# fast build rule for target.
+2_6/fast:
+	$(MAKE) -f 2/CMakeFiles/2_6.dir/build.make 2/CMakeFiles/2_6.dir/build
+.PHONY : 2_6/fast
+
+#=============================================================================
+# Target rules for targets named 2_5
+
+# Build rule for target.
+2_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_5
+.PHONY : 2_5
+
+# fast build rule for target.
+2_5/fast:
+	$(MAKE) -f 2/CMakeFiles/2_5.dir/build.make 2/CMakeFiles/2_5.dir/build
+.PHONY : 2_5/fast
+
+#=============================================================================
+# Target rules for targets named 2_7
+
+# Build rule for target.
+2_7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_7
+.PHONY : 2_7
+
+# fast build rule for target.
+2_7/fast:
+	$(MAKE) -f 2/CMakeFiles/2_7.dir/build.make 2/CMakeFiles/2_7.dir/build
+.PHONY : 2_7/fast
+
+#=============================================================================
+# Target rules for targets named 2_8
+
+# Build rule for target.
+2_8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2_8
+.PHONY : 2_8
+
+# fast build rule for target.
+2_8/fast:
+	$(MAKE) -f 2/CMakeFiles/2_8.dir/build.make 2/CMakeFiles/2_8.dir/build
+.PHONY : 2_8/fast
+
+#=============================================================================
+# Target rules for targets named pack1
+
+# Build rule for target.
+pack1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pack1
+.PHONY : pack1
+
+# fast build rule for target.
+pack1/fast:
+	$(MAKE) -f 2/CMakeFiles/pack1.dir/build.make 2/CMakeFiles/pack1.dir/build
+.PHONY : pack1/fast
+
+#=============================================================================
+# Target rules for targets named generator_test
+
+# Build rule for target.
+generator_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generator_test
+.PHONY : generator_test
+
+# fast build rule for target.
+generator_test/fast:
+	$(MAKE) -f 2/CMakeFiles/generator_test.dir/build.make 2/CMakeFiles/generator_test.dir/build
+.PHONY : generator_test/fast
+
+#=============================================================================
+# Target rules for targets named generator_test2
+
+# Build rule for target.
+generator_test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generator_test2
+.PHONY : generator_test2
+
+# fast build rule for target.
+generator_test2/fast:
+	$(MAKE) -f 2/CMakeFiles/generator_test2.dir/build.make 2/CMakeFiles/generator_test2.dir/build
+.PHONY : generator_test2/fast
+
+#=============================================================================
+# Target rules for targets named generator_test3
+
+# Build rule for target.
+generator_test3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generator_test3
+.PHONY : generator_test3
+
+# fast build rule for target.
+generator_test3/fast:
+	$(MAKE) -f 2/CMakeFiles/generator_test3.dir/build.make 2/CMakeFiles/generator_test3.dir/build
+.PHONY : generator_test3/fast
+
+#=============================================================================
+# Target rules for targets named template_test
+
+# Build rule for target.
+template_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template_test
+.PHONY : template_test
+
+# fast build rule for target.
+template_test/fast:
+	$(MAKE) -f 2/CMakeFiles/template_test.dir/build.make 2/CMakeFiles/template_test.dir/build
+.PHONY : template_test/fast
 
 #=============================================================================
 # Target rules for targets named sof_1_test1
@@ -556,13 +621,18 @@ help:
 	@echo "... fs1"
 	@echo "... po_enum"
 	@echo "... curl1"
-	@echo "... generator_test2"
-	@echo "... generator_test"
-	@echo "... 2_5"
-	@echo "... 2_6"
-	@echo "... 2_4"
 	@echo "... 2_3"
 	@echo "... 2_1"
+	@echo "... 2_4"
+	@echo "... 2_6"
+	@echo "... 2_5"
+	@echo "... 2_7"
+	@echo "... 2_8"
+	@echo "... pack1"
+	@echo "... generator_test"
+	@echo "... generator_test2"
+	@echo "... generator_test3"
+	@echo "... template_test"
 	@echo "... sof_1_test1"
 	@echo "... sof_1"
 	@echo "... share_prefsum_test"
